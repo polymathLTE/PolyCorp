@@ -352,7 +352,7 @@ export default function ContactPage() {
                     </Link>
                   </Button>
                   <p className="text-sm text-muted-foreground mt-3">
-                    REPLACE_ME: Schedule a 30-minute consultation to discuss your project.
+                    Schedule a 30-minute consultation to discuss your project.
                   </p>
                 </CardContent>
               </Card>
