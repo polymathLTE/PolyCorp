@@ -59,18 +59,18 @@ export default function AboutPage() {
               </h1>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="text-xl leading-relaxed mb-6">
-                  I'm a passionate Data Scientist and AI Engineer based in Lekki, Lagos, with a deep commitment to
+                  I'm a passionate Data Scientist and Machine Learning Engineer based in Lekki, Lagos, with a deep commitment to
                   transforming complex data challenges into innovative, AI-driven solutions that drive measurable
                   business impact.
                 </p>
                 <p className="leading-relaxed mb-6">
-                  REPLACE_ME: With over [X years] of experience in the field, I specialize in machine learning model
+                  ML Engineering: With over 5 years of experience in the field, I specialize in machine learning model
                   development, statistical analysis, and building scalable data infrastructure. My expertise spans
                   across the entire data science lifecycle, from data collection and preprocessing to model deployment
                   and monitoring in production environments.
                 </p>
                 <p className="leading-relaxed mb-6">
-                  REPLACE_ME: I have a proven track record of delivering end-to-end data solutions that have helped
+                  Data Science and Analytics: I have a proven track record of delivering end-to-end data solutions that have helped
                   organizations optimize their operations, improve decision-making processes, and unlock new revenue
                   streams. My approach combines technical excellence with business acumen, ensuring that every project
                   delivers tangible value.
@@ -424,17 +424,17 @@ export default function AboutPage() {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h4 className="font-heading font-semibold text-lg text-foreground">
-                          REPLACE_ME: Senior Data Scientist
+                          Data Scientist
                         </h4>
-                        <p className="text-muted-foreground">REPLACE_ME: Company Name</p>
+                        <p className="text-muted-foreground"> Toloka AI</p>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
                         <Calendar className="h-4 w-4" />
-                        <span>REPLACE_ME: 2022 - Present</span>
+                        <span> 2022 - Present</span>
                       </div>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
-                      REPLACE_ME: Led cross-functional teams in developing machine learning solutions that improved
+                      Led cross-functional teams in developing machine learning solutions that improved
                       business metrics by 30%. Specialized in LLM fine-tuning, predictive analytics, and automated data
                       pipelines processing millions of records daily.
                     </p>
@@ -446,17 +446,17 @@ export default function AboutPage() {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h4 className="font-heading font-semibold text-lg text-foreground">
-                          REPLACE_ME: Data Scientist
+                          Technical Consultant
                         </h4>
-                        <p className="text-muted-foreground">REPLACE_ME: Previous Company</p>
+                        <p className="text-muted-foreground"> Toloka AI</p>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
                         <Calendar className="h-4 w-4" />
-                        <span>REPLACE_ME: 2020 - 2022</span>
+                        <span>2025 </span>
                       </div>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
-                      REPLACE_ME: Developed and deployed machine learning models for customer segmentation and demand
+                      Developed and deployed machine learning models for customer segmentation and demand
                       forecasting. Built ETL pipelines and created interactive dashboards that reduced reporting time by
                       50%.
                     </p>
@@ -477,17 +477,17 @@ export default function AboutPage() {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h4 className="font-heading font-semibold text-lg text-foreground">
-                          REPLACE_ME: Master's in Data Science
+                          Explore AI Academy: Diploma in Data Science
                         </h4>
-                        <p className="text-muted-foreground">REPLACE_ME: University Name</p>
+                        <p className="text-muted-foreground" Diploma: ALX Africa </p>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
                         <Calendar className="h-4 w-4" />
-                        <span>REPLACE_ME: 2018 - 2020</span>
+                        <span>Duration: 2023 - 2024</span>
                       </div>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
-                      REPLACE_ME: Specialized in machine learning, statistical modeling, and big data analytics. Thesis
+                      Specialized in machine learning, statistical modeling, and big data analytics. Thesis
                       focused on deep learning applications in natural language processing.
                     </p>
                   </CardContent>
@@ -498,17 +498,17 @@ export default function AboutPage() {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h4 className="font-heading font-semibold text-lg text-foreground">
-                          REPLACE_ME: Bachelor's in Computer Science
+                          Bachelor's in Information Technology
                         </h4>
-                        <p className="text-muted-foreground">REPLACE_ME: University Name</p>
+                        <p className="text-muted-foreground"> Federal University of Technology, Akure (FUTA) </p>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
                         <Calendar className="h-4 w-4" />
-                        <span>REPLACE_ME: 2014 - 2018</span>
+                        <span> 2021 - 2026</span>
                       </div>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
-                      REPLACE_ME: Strong foundation in algorithms, data structures, and software engineering. Graduated
+                      Strong foundation in algorithms, data structures, and software engineering. Graduated
                       with First Class Honors.
                     </p>
                   </CardContent>
@@ -532,11 +532,11 @@ export default function AboutPage() {
                   <Badge variant="secondary">Native</Badge>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-medium">REPLACE_ME: Yoruba</span>
+                  <span className="font-medium"Yoruba</span>
                   <Badge variant="outline">Native</Badge>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-medium">REPLACE_ME: French</span>
+                  <span className="font-medium">French</span>
                   <Badge variant="outline">Intermediate</Badge>
                 </div>
               </div>
@@ -552,29 +552,29 @@ export default function AboutPage() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium">REPLACE_ME: AWS Certified Machine Learning - Specialty</p>
+                    <p className="font-medium">AWS Certified Machine Learning - Specialty</p>
                     <p className="text-sm text-muted-foreground">Amazon Web Services, 2024</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium">REPLACE_ME: Google Cloud Professional Data Engineer</p>
+                    <p className="font-medium">Google Cloud Professional Data Engineer</p>
                     <p className="text-sm text-muted-foreground">Google Cloud, 2023</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-chart-3 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium">REPLACE_ME: Microsoft Certified: Azure AI Engineer Associate</p>
+                    <p className="font-medium">Microsoft Certified: Azure AI Engineer Associate</p>
                     <p className="text-sm text-muted-foreground">Microsoft, 2023</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-chart-4 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
-                    <p className="font-medium">REPLACE_ME: Outstanding Graduate Award</p>
-                    <p className="text-sm text-muted-foreground">University Name, 2020</p>
+                    <p className="font-medium">Outstanding Graduate Award</p>
+                    <p className="text-sm text-muted-foreground">ALX Africa, 2024</p>
                   </div>
                 </div>
               </div>
