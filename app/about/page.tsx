@@ -532,7 +532,7 @@ export default function AboutPage() {
                   <Badge variant="secondary">Native</Badge>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-medium"Yoruba</span>
+                  <span className="font-medium">Yoruba</span>
                   <Badge variant="outline">Native</Badge>
                 </div>
                 <div className="flex items-center justify-between">
