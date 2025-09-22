@@ -121,9 +121,9 @@ export default function HomePage() {
                   <Badge variant="secondary">LLM</Badge>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
-                <CardTitle className="font-heading">REPLACE_ME: LLM Fine-tuning Project</CardTitle>
+                <CardTitle className="font-heading">LLM Fine-tuning Project</CardTitle>
                 <CardDescription>
-                  REPLACE_ME: Custom fine-tuning of large language models for domain-specific applications
+                  Custom fine-tuning of large language models for domain-specific applications
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -164,9 +164,9 @@ export default function HomePage() {
                   <Badge variant="secondary">ETL</Badge>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
-                <CardTitle className="font-heading">REPLACE_ME: Data Pipeline System</CardTitle>
+                <CardTitle className="font-heading">Data Pipeline System</CardTitle>
                 <CardDescription>
-                  REPLACE_ME: Scalable ETL pipeline processing millions of records with real-time monitoring
+                  Scalable ETL pipeline processing millions of records with real-time monitoring
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -207,9 +207,9 @@ export default function HomePage() {
                   <Badge variant="secondary">Dashboard</Badge>
                   <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
-                <CardTitle className="font-heading">REPLACE_ME: Analytics Dashboard</CardTitle>
+                <CardTitle className="font-heading">Analytics Dashboard</CardTitle>
                 <CardDescription>
-                  REPLACE_ME: Interactive business intelligence dashboard with real-time data visualization
+                  Interactive business intelligence dashboard with real-time data visualization
                 </CardDescription>
               </CardHeader>
               <CardContent>
