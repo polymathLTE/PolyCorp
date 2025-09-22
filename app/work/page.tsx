@@ -13,9 +13,9 @@ import Image from "next/image"
 const projects = [
   {
     id: "llm-finetuning",
-    title: "REPLACE_ME: Custom LLM Fine-tuning for Domain Expertise",
+    title: "RLHF Custom LLM Fine-tuning for Domain Expertise",
     description:
-      "REPLACE_ME: Fine-tuned large language models for specialized domain applications with improved accuracy and reduced hallucinations.",
+      "Fine-tuned large language models for specialized domain applications with improved accuracy and reduced hallucinations.",
     category: "LLM",
     tags: ["Python", "PyTorch", "Transformers", "Hugging Face", "CUDA"],
     image: "/ai-neural-network.png",
@@ -26,9 +26,9 @@ const projects = [
   },
   {
     id: "data-pipeline",
-    title: "REPLACE_ME: Scalable ETL Pipeline Architecture",
+    title: "Scalable ETL Pipeline Architecture",
     description:
-      "REPLACE_ME: Built a robust data pipeline processing 10M+ records daily with real-time monitoring and automated error handling.",
+      " Built a robust data pipeline processing 10M+ records daily with real-time monitoring and automated error handling.",
     category: "ETL",
     tags: ["Python", "Apache Airflow", "AWS", "PostgreSQL", "Docker"],
     image: "/data-pipeline-architecture.png",
@@ -39,9 +39,9 @@ const projects = [
   },
   {
     id: "analytics-dashboard",
-    title: "REPLACE_ME: Executive Analytics Dashboard",
+    title: " Executive Analytics Dashboard",
     description:
-      "REPLACE_ME: Interactive business intelligence dashboard providing real-time insights across multiple data sources.",
+      " Interactive business intelligence dashboard providing real-time insights across multiple data sources.",
     category: "Dashboard",
     tags: ["Power BI", "SQL", "Python", "DAX", "Azure"],
     image: "/business-analytics-dashboard.png",
@@ -52,9 +52,9 @@ const projects = [
   },
   {
     id: "ml-prediction-model",
-    title: "REPLACE_ME: Predictive Analytics Model",
+    title: " Predictive Analytics Model",
     description:
-      "REPLACE_ME: Machine learning model for forecasting business metrics with 95% accuracy using ensemble methods.",
+      " Machine learning model for forecasting business metrics with 95% accuracy using ensemble methods.",
     category: "ML",
     tags: ["Python", "Scikit-learn", "XGBoost", "Pandas", "Jupyter"],
     image: "/machine-learning-prediction-charts.png",
@@ -65,9 +65,9 @@ const projects = [
   },
   {
     id: "cloud-infrastructure",
-    title: "REPLACE_ME: Cloud Infrastructure Automation",
+    title: " Cloud Infrastructure Automation",
     description:
-      "REPLACE_ME: Automated cloud infrastructure deployment and scaling using Infrastructure as Code principles.",
+      " Automated cloud infrastructure deployment and scaling using Infrastructure as Code principles.",
     category: "Cloud",
     tags: ["AWS", "Terraform", "Docker", "Kubernetes", "CI/CD"],
     image: "/cloud-infrastructure-diagram.png",
@@ -78,9 +78,9 @@ const projects = [
   },
   {
     id: "nlp-sentiment-analysis",
-    title: "REPLACE_ME: NLP Sentiment Analysis System",
+    title: " NLP Sentiment Analysis System",
     description:
-      "REPLACE_ME: Real-time sentiment analysis system processing social media data with custom BERT fine-tuning.",
+      " Real-time sentiment analysis system processing social media data with custom BERT fine-tuning.",
     category: "ML",
     tags: ["Python", "BERT", "TensorFlow", "NLP", "API"],
     image: "/sentiment-analysis-visualization.png",
