@@ -479,7 +479,7 @@ export default function AboutPage() {
                         <h4 className="font-heading font-semibold text-lg text-foreground">
                           Explore AI Academy: Diploma in Data Science
                         </h4>
-                        <p className="text-muted-foreground" Diploma: ALX Africa </p>
+                        <p className="text-muted-foreground"> Diploma: ALX Africa </p>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
                         <Calendar className="h-4 w-4" />
