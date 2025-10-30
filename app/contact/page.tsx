@@ -346,7 +346,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="#" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://calendar.app.google/16RABqCPoXrhR3D1A" target="_blank" rel="noopener noreferrer">
                       <Calendar className="mr-2 h-4 w-4" />
                       Book a Meeting
                     </Link>
