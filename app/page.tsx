@@ -72,7 +72,7 @@ export default function HomePage() {
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="https://github.com/PolymathCorp
+                href="https://github.com/PolymathCorp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -325,7 +325,7 @@ export default function HomePage() {
                   <Linkedin className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="https://github.com/PolymathCorp
+                  href="https://github.com/PolymathCorp"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
