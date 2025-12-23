@@ -72,7 +72,7 @@ export default function HomePage() {
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="http://github.com/polymathLTE"
+                href="https://github.com/PolymathCorp
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -81,7 +81,7 @@ export default function HomePage() {
                 <Github className="h-5 w-5" />
               </Link>
               <Link
-                href="mailto:lawaltemmanuel@gmail.com"
+                href="mailto:hello@polymathcorp.works"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Send Email"
               >
@@ -325,7 +325,7 @@ export default function HomePage() {
                   <Linkedin className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="http://github.com/polymathLTE"
+                  href="https://github.com/PolymathCorp
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -334,7 +334,7 @@ export default function HomePage() {
                   <Github className="h-5 w-5" />
                 </Link>
                 <Link
-                  href="mailto:lawaltemmanuel@gmail.com"
+                  href="mailto:hello@polymathcorp.works"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   aria-label="Send Email"
                 >
@@ -377,8 +377,8 @@ export default function HomePage() {
               <ul className="space-y-2 text-muted-foreground">
                 <li>Lekki, Lagos</li>
                 <li>
-                  <Link href="mailto:lawaltemmanuel@gmail.com" className="hover:text-primary transition-colors">
-                    lawaltemmanuel@gmail.com
+                  <Link href="mailto:hello@polymathcorp.works" className="hover:text-primary transition-colors">
+                    hello@polymathcorp.works
                   </Link>
                 </li>
                 <li>
@@ -390,7 +390,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 Emmanuel Lawal. All rights reserved.</p>
+            <p>&copy; 2024 Polymath Corporation. All rights reserved.</p>
           </div>
         </div>
       </footer>
