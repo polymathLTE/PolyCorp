@@ -117,7 +117,7 @@ export default function WorkPage() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="font-heading font-bold text-xl text-foreground">
-                Emmanuel Lawal
+                Polymath Corporation
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
