@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "Lagos",
     "Nigeria",
   ],
-  authors: [{ name: "Emmanuel Lawal", url: "https://emmanuellawal.dev" }],
+  authors: [{ name: "Emmanuel Lawal", url: "https://polymathcorp.works" }],
   creator: "Emmanuel Lawal",
   publisher: "Emmanuel Lawal",
   formatDetection: {
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://emmanuellawal.dev"),
+  metadataBase: new URL("https://polymathcorp.works"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://emmanuellawal.dev",
+    url: "https://polymathcorp.works",
     title: "Emmanuel Lawal - Data Scientist & AI Engineer",
     description:
       "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in LLM fine-tuning and scalable data solutions.",
@@ -118,8 +118,8 @@ export default function RootLayout({
               jobTitle: "Data Scientist & AI Engineer",
               description:
                 "Data Scientist & AI Engineer specializing in machine learning, LLM fine-tuning, and data pipelines",
-              url: "https://emmanuellawal.dev",
-              email: "lawaltemmanuel@gmail.com",
+              url: "https://polymathcorp.works",
+              email: "hello@polymathcorp.works",
               telephone: "+2347065533470",
               address: {
                 "@type": "PostalAddress",
@@ -127,7 +127,7 @@ export default function RootLayout({
                 addressRegion: "Lagos",
                 addressCountry: "Nigeria",
               },
-              sameAs: ["https://www.linkedin.com/in/emmanuel-lawal-temitope", "http://github.com/polymathLTE"],
+              sameAs: ["https://www.linkedin.com/in/emmanuel-lawal-temitope", "https://github.com/PolymathCorp"],
               knowsAbout: [
                 "Data Science",
                 "Machine Learning",
