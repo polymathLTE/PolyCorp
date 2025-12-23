@@ -88,7 +88,7 @@ export default function ContactPage() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="font-heading font-bold text-xl text-foreground">
-                Emmanuel Lawal
+                Polymath Corporation
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -145,8 +145,8 @@ export default function ContactPage() {
             <div className="lg:col-span-2 order-2 lg:order-1">
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-heading text-2xl">Send me a message</CardTitle>
-                  <p className="text-muted-foreground">Fill out the form below and I'll get back to you within 24 hours.</p>
+                  <CardTitle className="font-heading text-2xl">Send us a message</CardTitle>
+                  <p className="text-muted-foreground">Fill out the form below and we'll get back to you within 24 hours.</p>
                 </CardHeader>
                 <CardContent>
                   {isSubmitted ? (
