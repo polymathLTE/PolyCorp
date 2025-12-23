@@ -172,11 +172,11 @@ export default function ContactPage() {
 
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label htmlFor="name">Full Name *</Label>
+                          <Label htmlFor="name">Name *</Label>
                           <Input
                             id="name"
                             type="text"
-                            placeholder="Your full name"
+                            placeholder="Organization or personal name"
                             value={formData.name}
                             onChange={(e) => handleInputChange("name", e.target.value)}
                             required
@@ -259,10 +259,10 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium">Email</p>
                       <Link
-                        href="mailto:lawaltemmanuel@gmail.com"
+                        href="mailto:hello@polymathcorp.works"
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        lawaltemmanuel@gmail.com
+                        hello@polymathcorp.works
                       </Link>
                     </div>
                   </div>
