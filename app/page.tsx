@@ -15,7 +15,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="font-heading font-bold text-xl text-foreground">
-                Emmanuel Lawal
+                Polymath Corporation
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -309,7 +309,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-12">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-heading font-semibold text-foreground mb-4">Emmanuel Lawal</h3>
+              <h3 className="font-heading font-semibold text-foreground mb-4">Polymath Corporation</h3>
               <p className="text-muted-foreground mb-4">
                 Data Scientist & AI Engineer based in Lekki, Lagos. Building intelligent systems that drive business
                 impact.
