@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -25,16 +25,15 @@ export default function ContactPage() {
     honeypot: "", // Spam protection
   })
 
+  const formRef = useRef<HTMLFormElement | null>(null)
+  const nameInputRef = useRef<HTMLInputElement | null>(null)
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError("")
 
-    // Honeypot spam protection
-    if (formData.honeypot) {
-      return
-    }
+    if (formData.honeypot) return
 
-    // Client-side validation
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
       setError("Please fill in all required fields.")
       return
@@ -45,9 +44,7 @@ export default function ContactPage() {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: formData.name.trim(),
           email: formData.email.trim(),
@@ -59,15 +56,14 @@ export default function ContactPage() {
 
       const result = await response.json()
 
-      if (!response.ok) {
-        throw new Error(result.error || "Failed to send message")
-      }
+      if (!response.ok) throw new Error(result.error || "Failed to send message")
 
       setIsSubmitted(true)
       setFormData({ name: "", email: "", message: "", budget: "", honeypot: "" })
-    } catch (error) {
-      console.error("Error submitting form:", error)
-      setError(error instanceof Error ? error.message : "Failed to send message. Please try again.")
+      // optionally focus a success button or similar
+    } catch (err) {
+      console.error("Error submitting form:", err)
+      setError(err instanceof Error ? err.message : "Failed to send message. Please try again.")
     } finally {
       setIsSubmitting(false)
     }
@@ -75,8 +71,13 @@ export default function ContactPage() {
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
-    // Clear error when user starts typing
     if (error) setError("")
+  }
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" })
+    // focus first input after a small timeout so scroll finishes
+    setTimeout(() => nameInputRef.current?.focus(), 300)
   }
 
   return (
@@ -110,58 +111,57 @@ export default function ContactPage() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-16 lg:py-24">
+      {/* Hero */}
+      <section className="py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <div className="text-center mb-12">
-            <h1 className="font-heading font-bold text-4xl sm:text-5xl text-foreground mb-6 text-balance">
-              Let's Connect
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              I'm always interested in discussing new opportunities, collaborations, or innovative data science
-              projects. Let's start a conversation.
-            </p>
+          <div className="flex flex-col lg:flex-row items-start gap-12">
+            <div className="flex-1 text-center lg:text-left">
+              <h1 className="font-heading font-bold text-4xl sm:text-5xl text-foreground mb-4 text-balance">Let's Connect</h1>
+              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+                I'm always interested in discussing new opportunities, collaborations, or innovative data science
+                projects. Pick a quick option below — schedule a meeting or send a message.
+              </p>
+            </div>
+            {/* Small hero CTA group (visible on larger screens) */}
+            <div className="hidden md:flex md:flex-col gap-3">
+              <Button asChild size="lg" className="shadow-lg">
+                <Link href="https://calendar.app.google/16RABqCPoXrhR3D1A" target="_blank" rel="noopener noreferrer" aria-label="Book a meeting">
+                  <Calendar className="mr-2 h-4 w-4 inline" /> Book a Meeting
+                </Link>
+              </Button>
+              <Button onClick={scrollToForm} variant="outline" size="lg" className="text-foreground">
+                <Send className="mr-2 h-4 w-4" /> Send a Message
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Main content: prioritize CTA area on the right column */}
       <section className="pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Contact Form */}
-            <div className="lg:col-span-2">
+          <div className="grid lg:grid-cols-3 gap-8 items-start">
+            {/* Left: Form (larger) */}
+            <div className="lg:col-span-2 order-2 lg:order-1">
               <Card>
                 <CardHeader>
                   <CardTitle className="font-heading text-2xl">Send me a message</CardTitle>
-                  <p className="text-muted-foreground">
-                    Fill out the form below and I'll get back to you within 24 hours.
-                  </p>
+                  <p className="text-muted-foreground">Fill out the form below and I'll get back to you within 24 hours.</p>
                 </CardHeader>
                 <CardContent>
                   {isSubmitted ? (
                     <div className="text-center py-8">
                       <CheckCircle className="h-16 w-16 text-primary mx-auto mb-4" />
                       <h3 className="font-heading font-semibold text-xl text-foreground mb-2">Message Sent!</h3>
-                      <p className="text-muted-foreground mb-6">
-                        Thank you for reaching out. I'll get back to you within 24 hours.
-                      </p>
+                      <p className="text-muted-foreground mb-6">Thank you for reaching out. I'll get back to you within 24 hours.</p>
                       <Button onClick={() => setIsSubmitted(false)} variant="outline">
                         Send Another Message
                       </Button>
                     </div>
                   ) : (
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      {/* Honeypot field for spam protection */}
-                      <input
-                        type="text"
-                        name="honeypot"
-                        value={formData.honeypot}
-                        onChange={(e) => handleInputChange("honeypot", e.target.value)}
-                        style={{ display: "none" }}
-                        tabIndex={-1}
-                        autoComplete="off"
-                      />
+                    <form ref={formRef} onSubmit={handleSubmit} className="space-y-6" aria-label="Contact form">
+                      {/* Honeypot */}
+                      <input type="text" name="honeypot" value={formData.honeypot} onChange={(e) => handleInputChange("honeypot", e.target.value)} style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
                       {error && (
                         <Alert variant="destructive">
@@ -173,25 +173,11 @@ export default function ContactPage() {
                       <div className="grid md:grid-cols-2 gap-6">
                         <div className="space-y-2">
                           <Label htmlFor="name">Name *</Label>
-                          <Input
-                            id="name"
-                            type="text"
-                            placeholder="Organization or personal name"
-                            value={formData.name}
-                            onChange={(e) => handleInputChange("name", e.target.value)}
-                            required
-                          />
+                          <Input id="name" ref={nameInputRef} type="text" placeholder="Organization or personal name" value={formData.name} onChange={(e) => handleInputChange("name", e.target.value)} required />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="email">Email Address *</Label>
-                          <Input
-                            id="email"
-                            type="email"
-                            placeholder="your.email@example.com"
-                            value={formData.email}
-                            onChange={(e) => handleInputChange("email", e.target.value)}
-                            required
-                          />
+                          <Input id="email" type="email" placeholder="your.email@example.com" value={formData.email} onChange={(e) => handleInputChange("email", e.target.value)} required />
                         </div>
                       </div>
 
@@ -213,14 +199,7 @@ export default function ContactPage() {
 
                       <div className="space-y-2">
                         <Label htmlFor="message">Message *</Label>
-                        <Textarea
-                          id="message"
-                          placeholder="Tell me about your project, goals, or how I can help you..."
-                          rows={6}
-                          value={formData.message}
-                          onChange={(e) => handleInputChange("message", e.target.value)}
-                          required
-                        />
+                        <Textarea id="message" placeholder="Tell me about your project, goals, or how I can help you..." rows={6} value={formData.message} onChange={(e) => handleInputChange("message", e.target.value)} required />
                       </div>
 
                       <Button type="submit" size="lg" disabled={isSubmitting} className="w-full">
@@ -237,17 +216,35 @@ export default function ContactPage() {
                         )}
                       </Button>
 
-                      <p className="text-sm text-muted-foreground">
-                        By submitting this form, you agree to receive email responses from me regarding your inquiry.
-                      </p>
+                      <p className="text-sm text-muted-foreground">By submitting this form, you agree to receive email responses from me regarding your inquiry.</p>
                     </form>
                   )}
                 </CardContent>
               </Card>
             </div>
 
-            {/* Contact Information */}
-            <div className="lg:col-span-1 space-y-8">
+            {/* Right: CTA-first column */}
+            <aside className="lg:col-span-1 order-1 lg:order-2 space-y-6">
+              {/* Primary CTA card (Book + Send) */}
+              <Card className="sticky top-20">
+                <CardHeader>
+                  <CardTitle className="font-heading">Quick Actions</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <Button asChild className="w-full">
+                    <Link href="https://calendar.app.google/16RABqCPoXrhR3D1A" target="_blank" rel="noopener noreferrer" aria-label="Book a meeting">
+                      <Calendar className="mr-2 h-4 w-4 inline" /> Book a Meeting
+                    </Link>
+                  </Button>
+
+                  <Button onClick={scrollToForm} variant="outline" className="w-full">
+                    <Send className="mr-2 h-4 w-4" /> Send a Message
+                  </Button>
+
+                  <p className="text-sm text-muted-foreground">Prefer a live chat? Book a 30-min consult or drop a message below.</p>
+                </CardContent>
+              </Card>
+
               {/* Contact Details */}
               <Card>
                 <CardHeader>
@@ -258,26 +255,18 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <Link
-                        href="mailto:hello@polymathcorp.works"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        hello@polymathcorp.works
-                      </Link>
+                      <Link href="mailto:hello@polymathcorp.works" className="text-sm text-muted-foreground hover:text-primary transition-colors">hello@polymathcorp.works</Link>
                     </div>
                   </div>
+
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">Phone</p>
-                      <Link
-                        href="tel:+2347065533470"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        +234 706 553 3470
-                      </Link>
+                      <Link href="tel:+2347065533470" className="text-sm text-muted-foreground hover:text-primary transition-colors">+234 706 553 3470</Link>
                     </div>
                   </div>
+
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-primary" />
                     <div>
@@ -288,78 +277,53 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              {/* Social Links */}
+              {/* Social / Resume */}
               <Card>
                 <CardHeader>
                   <CardTitle className="font-heading">Connect Online</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Link
-                    href="https://www.linkedin.com/in/emmanuel-lawal-temitope"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors"
-                  >
+                  <Link href="https://www.linkedin.com/in/emmanuel-lawal-temitope" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors">
                     <Linkedin className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">LinkedIn</p>
                       <p className="text-sm text-muted-foreground">Professional network</p>
                     </div>
                   </Link>
-                  <Link
-                    href="http://github.com/polymathLTE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors"
-                  >
+
+                  <Link href="http://github.com/polymathLTE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors">
                     <Github className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">GitHub</p>
                       <p className="text-sm text-muted-foreground">Code repositories</p>
                     </div>
                   </Link>
-                </CardContent>
-              </Card>
 
-              {/* Resume Download */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="font-heading">Resume</CardTitle>
-                </CardHeader>
-                <CardContent>
                   <Button asChild className="w-full">
                     <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Resume
+                      <Download className="mr-2 h-4 w-4" /> Download Resume
                     </Link>
                   </Button>
-                  <p className="text-sm text-muted-foreground mt-3">
-                    Get a detailed overview of my experience, skills, and achievements.
-                  </p>
                 </CardContent>
               </Card>
-
-              {/* Calendar Link (Optional) */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="font-heading">Schedule a Call</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Button asChild variant="outline" className="w-full bg-transparent">
-                    <Link href="https://calendar.app.google/16RABqCPoXrhR3D1A" target="_blank" rel="noopener noreferrer">
-                      <Calendar className="mr-2 h-4 w-4" />
-                      Book a Meeting
-                    </Link>
-                  </Button>
-                  <p className="text-sm text-muted-foreground mt-3">
-                    Schedule a 30-minute consultation to discuss your project.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+            </aside>
           </div>
         </div>
       </section>
+
+      {/* Floating mobile CTA (makes CTAs easy on small screens) */}
+      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 md:hidden z-50">
+        <div className="flex gap-3 bg-background/95 backdrop-blur rounded-full p-2 shadow-md">
+          <Button size="sm" onClick={scrollToForm} aria-label="Send a message">
+            <Send className="h-4 w-4" />
+          </Button>
+          <Button size="sm" asChild>
+            <Link href="https://calendar.app.google/16RABqCPoXrhR3D1A" target="_blank" rel="noopener noreferrer" aria-label="Book a meeting">
+              <Calendar className="h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }
