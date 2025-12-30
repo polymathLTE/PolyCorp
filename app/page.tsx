@@ -43,27 +43,26 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="max-w-4xl">
             <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground mb-6 text-balance">
-              Data Scientist & AI Engineer
+              Dream, Dare, Do
             </h1>
             <p className="text-xl text-muted-foreground mb-8 text-pretty max-w-2xl leading-relaxed">
-              I build intelligent systems that transform data into actionable insights. Specializing in machine
-              learning, LLM fine-tuning, and scalable data pipelines that drive business impact.
+              Polymath Corporation performs integrated IT advisory and implementation. We design, build, and operate production-grade AI, analytics and infrastructure for finance, industrial and enterprise customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button asChild size="lg" className="w-fit">
                 <Link href="/work">
-                  View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                  View Our Work <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="w-fit bg-transparent">
-                <Link href="/contact">Get In Touch</Link>
+                <Link href="/contact">Talk to Us</Link>
               </Button>
             </div>
 
             {/* Quick Links */}
             <div className="flex items-center gap-6">
               <Link
-                href="https://www.linkedin.com/in/emmanuel-lawal-temitope"
+                href="https://www.linkedin.com/company/polymath-corporation/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -92,13 +91,136 @@ export default function HomePage() {
         </div>
       </section>
 
+      /* Short Services section*/
+      <section className="py-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-foreground">Services</h3>
+              <p className="text-muted-foreground mt-2 max-w-lg">
+                Advisory + implementation across finance, industrial and enterprise systems.
+              </p>
+            </div>
+            <div>
+              <Button asChild size="sm" variant="outline">
+                <Link href="/work">Explore Services</Link>
+              </Button>
+            </div>
+          </div>
+      
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Advisory</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Strategy & Architecture</CardTitle>
+                <CardDescription>Roadmaps, compliance and enterprise architecture.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">Banking</Badge>
+                  <Badge variant="outline" className="text-xs">Energy</Badge>
+                  <Badge variant="outline" className="text-xs">Telecoms</Badge>
+                </div>
+              </CardContent>
+            </Card>
+      
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Data</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Data Engineering</CardTitle>
+                <CardDescription>ETL, warehouses, BI and observability.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">Telecoms</Badge>
+                  <Badge variant="outline" className="text-xs">Retail</Badge>
+                  <Badge variant="outline" className="text-xs">Procurement</Badge>
+                </div>
+              </CardContent>
+            </Card>
+      
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">ML & AI</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Models & LLMs</CardTitle>
+                <CardDescription>Credit scoring, recommenders, fine-tuning & RAG.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">Actuarial</Badge>
+                  <Badge variant="outline" className="text-xs">Crypto</Badge>
+                  <Badge variant="outline" className="text-xs">E-commerce</Badge>
+                </div>
+              </CardContent>
+            </Card>
+      
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Software</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Integration & Apps</CardTitle>
+                <CardDescription>APIs, lending platforms and operational tools.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">Microfinance</Badge>
+                  <Badge variant="outline" className="text-xs">Banking</Badge>
+                </div>
+              </CardContent>
+            </Card>
+      
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Infra</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Cloud & On-Prem</CardTitle>
+                <CardDescription>Hybrid clusters, Dell deployments, DR & recovery.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">On-Prem</Badge>
+                  <Badge variant="outline" className="text-xs">DR</Badge>
+                  <Badge variant="outline" className="text-xs">Hybrid</Badge>
+                </div>
+              </CardContent>
+            </Card>
+      
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Industry</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Sector Solutions</CardTitle>
+                <CardDescription>Banking, Energy, Telecoms, Retail and Education.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">Payments</Badge>
+                  <Badge variant="outline" className="text-xs">Monitoring</Badge>
+                  <Badge variant="outline" className="text-xs">Analytics</Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+
       {/* Featured Projects */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-4">Featured Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              A selection of my recent work in machine learning, data engineering, and AI systems.
+              A selection of our work across Telecoms, Banking and Actuary, and AI systems.
             </p>
           </div>
 
@@ -248,19 +370,18 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-6">About Emmanuel</h2>
+              <h2 className="font-heading font-bold text-3xl sm:text-4xl text-foreground mb-6">About Polymath</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Based in Lekki, Lagos, I'm a passionate Data Scientist and AI Engineer with expertise in machine
-                learning, statistical analysis, and building scalable data solutions. I transform complex data
-                challenges into innovative AI-driven solutions.
+                We turn data and ML complexity into measurable business outcomes: production-ready LLMs and RAG systems, scalable ETL and data platforms, real-time monitoring for industrial assets, and compliance-ready finance stacks
+
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                My experience spans across Python, SQL, Power BI, and cloud platforms like AWS and GCP, with a focus on
+                Our experience spans across Python, SQL, Power BI, and cloud platforms like AWS and GCP, with a focus on
                 delivering measurable business impact through data-driven insights.
               </p>
               <Button asChild variant="outline">
                 <Link href="/about">
-                  Learn More About Me <ArrowRight className="ml-2 h-4 w-4" />
+                  Learn More About Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
@@ -311,12 +432,11 @@ export default function HomePage() {
             <div>
               <h3 className="font-heading font-semibold text-foreground mb-4">Polymath Corporation</h3>
               <p className="text-muted-foreground mb-4">
-                Data Scientist & AI Engineer based in Lekki, Lagos. Building intelligent systems that drive business
-                impact.
+                Building intelligent systems that drive business impact.
               </p>
               <div className="flex items-center gap-4">
                 <Link
-                  href="https://www.linkedin.com/in/emmanuel-lawal-temitope"
+                  href="https://www.linkedin.com/company/polymath-corporation/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
