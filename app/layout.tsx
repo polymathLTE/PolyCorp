@@ -22,17 +22,17 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Emmanuel Lawal - Data Scientist & AI Engineer",
-    template: "%s | Emmanuel Lawal",
+    default: "Polymath Corporation - Integrated IT Advisory & Implementation",
+    template: "%s | Polymath Corporation",
   },
   description:
-    "Portfolio of Emmanuel Lawal, Data Scientist & AI Engineer specializing in machine learning, LLM fine-tuning, data pipelines, and AI systems. Based in Lekki, Lagos.",
+    "Portfolio of Polymath Corporation, integrated IT Consulting and Implementation specializing in Software solutions, ML & LLM fine-tuning, resilient data pipelines and BI analytics, and hybrid infrastructure for finance, utilities, telecoms and enterprise organizations",
   generator: "Next.js",
-  applicationName: "Emmanuel Lawal Portfolio",
+  applicationName: "Polymath Corporation Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Data Science",
-    "AI Engineer",
+    "AI Engineering",
     "Machine Learning",
     "Python",
     "SQL",
@@ -43,10 +43,13 @@ export const metadata: Metadata = {
     "GCP",
     "Lagos",
     "Nigeria",
+    "Gbogbonise",
+    
+    
   ],
-  authors: [{ name: "Emmanuel Lawal", url: "https://polymathcorp.works" }],
-  creator: "Emmanuel Lawal",
-  publisher: "Emmanuel Lawal",
+  authors: [{ name: "Polymath Corporation", url: "https://polymathcorp.works" }],
+  creator: "Polymath Corporation",
+  publisher: "Polymath Corporation",
   formatDetection: {
     email: false,
     address: false,
@@ -60,22 +63,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://polymathcorp.works",
-    title: "Emmanuel Lawal - Data Scientist & AI Engineer",
+    title: "Polymath Corporation - Integrated IT Advisory & Implementation",
     description:
       "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in LLM fine-tuning and scalable data solutions.",
-    siteName: "Emmanuel Lawal Portfolio",
+    siteName: "Polymath Corporation Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Emmanuel Lawal - Data Scientist & AI Engineer",
+        alt: "Polymath Corporation - Integrated IT Advisory & Implementation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel Lawal - Data Scientist & AI Engineer",
+    title: "Polymath Corporation - Integrated IT Advisory & Implementation",
     description:
       "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in LLM fine-tuning and scalable data solutions.",
     images: ["/og-image.png"],
@@ -114,10 +117,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Emmanuel Lawal",
-              jobTitle: "Data Scientist & AI Engineer",
+              name: "Polymath Corporation",
+              jobTitle: "Integrated IT Advisory & Implementation",
               description:
-                "Data Scientist & AI Engineer specializing in machine learning, LLM fine-tuning, and data pipelines",
+                "Integrated IT Advisory & Implementation specializing in machine learning, LLM fine-tuning, and data pipelines",
               url: "https://polymathcorp.works",
               email: "hello@polymathcorp.works",
               telephone: "+2347065533470",
@@ -127,7 +130,7 @@ export default function RootLayout({
                 addressRegion: "Lagos",
                 addressCountry: "Nigeria",
               },
-              sameAs: ["https://www.linkedin.com/in/emmanuel-lawal-temitope", "https://github.com/PolymathCorp"],
+              sameAs: ["https://www.linkedin.com/company/polymath-corporation/", "https://github.com/PolymathCorp"],
               knowsAbout: [
                 "Data Science",
                 "Machine Learning",
