@@ -1,6 +1,6 @@
-# Emmanuel Lawal - Portfolio Website
+# Polymath Corporation - Portfolio Website
 
-A modern, responsive portfolio website for Emmanuel Lawal, Data Scientist & AI Engineer, built with Next.js 15, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website for Emmanuel Lawal, Data Scientist & AI Engineer, built with Next.js 15, TypeScript, and Tailwind CSS
 
 ## 🚀 Features
 
