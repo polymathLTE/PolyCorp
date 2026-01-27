@@ -120,7 +120,7 @@ export default function RootLayout({
               name: "Polymath Corporation",
               jobTitle: "Integrated IT Advisory & Implementation",
               description:
-                "Integrated IT Advisory & Implementation specializing in machine learning, LLM fine-tuning, and data pipelines",
+                "Integrated IT Advisory & Implementation specializing in Compliance, machine learning, LLM fine-tuning, and data pipelines",
               url: "https://polymathcorp.works",
               email: "hello@polymathcorp.works",
               telephone: "+2347065533470",
@@ -140,16 +140,17 @@ export default function RootLayout({
                 "Power BI",
                 "AWS",
                 "Google Cloud Platform",
-                "Data Engineering",
+                "Data Infrastructure",
                 "LLM Fine-tuning",
+                "Compliance",
               ],
               alumniOf: {
                 "@type": "Organization",
-                name: "REPLACE_ME: University Name",
+                name: "FUT, Akure",
               },
               worksFor: {
                 "@type": "Organization",
-                name: "REPLACE_ME: Current Company",
+                name: "Polymath Corporation",
               },
             }),
           }}

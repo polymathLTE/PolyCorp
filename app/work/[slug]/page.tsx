@@ -10,29 +10,29 @@ import { notFound } from "next/navigation"
 // Project data - in a real app, this would come from a CMS or API
 const projects = {
   "llm-finetuning": {
-    title: "REPLACE_ME: Custom LLM Fine-tuning for Domain Expertise",
+    title: "Custom LLM Fine-tuning for Domain Expertise",
     description:
-      "REPLACE_ME: Fine-tuned large language models for specialized domain applications with improved accuracy and reduced hallucinations.",
+      "Fine-tuned large language models for specialized domain applications with improved accuracy and reduced hallucinations.",
     category: "LLM",
     tags: ["Python", "PyTorch", "Transformers", "Hugging Face", "CUDA", "LoRA", "PEFT"],
     heroImage: "/ai-neural-network-training-visualization.png",
     year: "2024",
     duration: "3 months",
     role: "Lead AI Engineer",
-    client: "REPLACE_ME: Tech Startup",
+    client: "Tech Startup",
     status: "Completed",
     tldr: "Achieved 40% improvement in domain-specific accuracy by fine-tuning LLaMA-2 7B model using LoRA techniques, reducing inference costs by 60% while maintaining performance.",
     problem:
-      "REPLACE_ME: The client needed a language model that could understand and generate content specific to their industry domain. Off-the-shelf models were producing generic responses with frequent hallucinations and lacked the specialized knowledge required for their use case.",
+      "The client needed a language model that could understand and generate content specific to their industry domain. Off-the-shelf models were producing generic responses with frequent hallucinations and lacked the specialized knowledge required for their use case.",
     approach: [
       "Conducted comprehensive analysis of domain-specific requirements and data patterns",
       "Curated and preprocessed a high-quality dataset of 50K+ domain-specific examples",
-      "Implemented LoRA (Low-Rank Adaptation) fine-tuning to efficiently adapt LLaMA-2 7B",
+      "Implemented LoRA (Low-Rank Adaptation) fine-tuning to efficiently adapt Gemma 7B",
       "Developed custom evaluation metrics for domain-specific performance assessment",
       "Optimized inference pipeline for production deployment with cost constraints",
     ],
     solution:
-      "REPLACE_ME: Built a comprehensive fine-tuning pipeline using PyTorch and Hugging Face Transformers. Implemented LoRA adapters to efficiently fine-tune the model while preserving general capabilities. Created automated evaluation framework with domain-specific benchmarks.",
+      "Built a comprehensive fine-tuning pipeline using PyTorch and Hugging Face Transformers. Implemented LoRA adapters to efficiently fine-tune the model while preserving general capabilities. Created automated evaluation framework with domain-specific benchmarks.",
     results: [
       "40% improvement in domain-specific accuracy compared to base model",
       "60% reduction in inference costs through efficient LoRA implementation",
@@ -52,20 +52,20 @@ const projects = {
     },
   },
   "data-pipeline": {
-    title: "REPLACE_ME: Scalable ETL Pipeline Architecture",
+    title: "Scalable ETL Pipeline Architecture",
     description:
-      "REPLACE_ME: Built a robust data pipeline processing 10M+ records daily with real-time monitoring and automated error handling.",
+      "Built a robust data pipeline processing 10M+ records daily with real-time monitoring and automated error handling.",
     category: "ETL",
     tags: ["Python", "Apache Airflow", "AWS", "PostgreSQL", "Docker", "Kafka", "Redis"],
     heroImage: "/data-pipeline-architecture.png",
     year: "2024",
     duration: "4 months",
     role: "Senior Data Engineer",
-    client: "REPLACE_ME: E-commerce Platform",
+    client: "E-commerce Platform",
     status: "Completed",
     tldr: "Designed and implemented a scalable ETL pipeline processing 10M+ records daily with 99.9% uptime, reducing data processing time by 75% and enabling real-time analytics.",
     problem:
-      "REPLACE_ME: The client's existing data infrastructure couldn't handle the growing volume of transactional data. Manual processes were causing delays, data quality issues, and preventing real-time business insights.",
+      "The client's existing data infrastructure couldn't handle the growing volume of transactional data. Manual processes were causing delays, data quality issues, and preventing real-time business insights.",
     approach: [
       "Analyzed existing data flows and identified bottlenecks in the current system",
       "Designed a microservices-based architecture for scalable data processing",
@@ -74,7 +74,7 @@ const projects = {
       "Created real-time monitoring dashboards for pipeline health",
     ],
     solution:
-      "REPLACE_ME: Architected a cloud-native ETL pipeline using Apache Airflow for orchestration, AWS services for scalable compute and storage, and implemented real-time data quality monitoring with automated alerting.",
+      "Architected a cloud-native ETL pipeline using Apache Airflow for orchestration, AWS services for scalable compute and storage, and implemented real-time data quality monitoring with automated alerting.",
     results: [
       "99.9% pipeline uptime with automated error recovery",
       "75% reduction in data processing time",
@@ -94,20 +94,20 @@ const projects = {
     },
   },
   "analytics-dashboard": {
-    title: "REPLACE_ME: Executive Analytics Dashboard",
+    title: "Executive Analytics Dashboard",
     description:
-      "REPLACE_ME: Interactive business intelligence dashboard providing real-time insights across multiple data sources.",
+      "Interactive business intelligence dashboard providing real-time insights across multiple data sources.",
     category: "Dashboard",
     tags: ["Power BI", "SQL", "Python", "DAX", "Azure", "REST API"],
     heroImage: "/business-analytics-dashboard-interface.png",
     year: "2024",
     duration: "2 months",
     role: "BI Developer & Data Analyst",
-    client: "REPLACE_ME: Manufacturing Company",
+    client: "Manufacturing Company",
     status: "Completed",
     tldr: "Created an executive dashboard consolidating data from 5+ sources, reducing reporting time by 50% and enabling data-driven decision making across all departments.",
     problem:
-      "REPLACE_ME: Executives were spending hours manually compiling reports from different systems. Data was scattered across multiple platforms, making it difficult to get a unified view of business performance.",
+      "Executives were spending hours manually compiling reports from different systems. Data was scattered across multiple platforms, making it difficult to get a unified view of business performance.",
     approach: [
       "Conducted stakeholder interviews to understand reporting requirements",
       "Mapped data sources and designed unified data model",
@@ -116,7 +116,7 @@ const projects = {
       "Implemented role-based access control and mobile responsiveness",
     ],
     solution:
-      "REPLACE_ME: Developed a comprehensive Power BI dashboard with automated data integration from CRM, ERP, and financial systems. Implemented advanced DAX calculations for complex business metrics and created mobile-responsive views.",
+      "Developed a comprehensive Power BI dashboard with automated data integration from CRM, ERP, and financial systems. Implemented advanced DAX calculations for complex business metrics and created mobile-responsive views.",
     results: [
       "50% reduction in manual reporting time",
       "Real-time visibility into KPIs across all departments",

@@ -283,7 +283,7 @@ export default function ContactPage() {
                   <CardTitle className="font-heading">Connect Online</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <Link href="https://www.linkedin.com/in/emmanuel-lawal-temitope" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors">
+                  <Link href="https://www.linkedin.com/company/polymath-corporation/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors">
                     <Linkedin className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">LinkedIn</p>
@@ -291,7 +291,7 @@ export default function ContactPage() {
                     </div>
                   </Link>
 
-                  <Link href="http://github.com/polymathLTE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors">
+                  <Link href="https://github.com/PolymathCorp" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg border border-border hover:bg-muted/50 transition-colors">
                     <Github className="h-5 w-5 text-primary" />
                     <div>
                       <p className="font-medium">GitHub</p>
