@@ -1,7 +1,7 @@
 {
-  "name": "Emmanuel Lawal - Data Scientist & AI Engineer",
-  "short_name": "Emmanuel Lawal",
-  "description": "Portfolio of Emmanuel Lawal, Data Scientist & AI Engineer specializing in machine learning, LLM fine-tuning, and data pipelines.",
+  "name": "Polymath Corporation - Integrated IT advisory and implementation specializing in machine learning, LLM fine-tuning, Compliance and data pipelines.",
+  "short_name": "Polymath Corporation",
+  "description": "Portfolio of Polymath Corporation, Integrated IT advisory and implementation specializing in machine learning, LLM fine-tuning, Compliance and data pipelines.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -19,8 +19,18 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "polymath_corp_logo.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
     }
   ],
-  "categories": ["portfolio", "data-science", "ai", "machine-learning"],
+  "categories": [
+    "portfolio",
+    "data-science",
+    "ai",
+    "machine-learning"
+  ],
   "lang": "en-US"
 }

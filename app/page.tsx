@@ -92,77 +92,77 @@ export default function HomePage() {
       </section>
 
       <section className="py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h3 className="font-heading font-bold text-2xl text-foreground">Core Services</h3>
-            <p className="text-muted-foreground mt-2 max-w-lg">
-              Advisory + implementation: Strategy · Data, AI & Product · Infrastructure & Resilience
-            </p>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h3 className="font-heading font-bold text-2xl text-foreground">Core Services</h3>
+              <p className="text-muted-foreground mt-2 max-w-lg">
+                Advisory + implementation: Strategy · Data, AI & Product · Infrastructure & Resilience
+              </p>
+            </div>
+            <div>
+              <Button asChild size="sm" variant="outline">
+                <Link href="/work">Explore Work</Link>
+              </Button>
+            </div>
           </div>
-          <div>
-            <Button asChild size="sm" variant="outline">
-              <Link href="/work">Explore Work</Link>
-            </Button>
+
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Strategy</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Strategy & Architecture</CardTitle>
+                <CardDescription>Advisory, compliance-aware roadmaps and enterprise architecture.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">Modernization</Badge>
+                  <Badge variant="outline" className="text-xs">Compliance</Badge>
+                  <Badge variant="outline" className="text-xs">Roadmaps</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Product</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Data, AI & Product</CardTitle>
+                <CardDescription>
+                  Data platforms, ML/LLMs, custom software, and digital product & branding for adoption.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">MLOps</Badge>
+                  <Badge variant="outline" className="text-xs">Recommenders</Badge>
+                  <Badge variant="outline" className="text-xs">Branding</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="secondary">Infra</Badge>
+                </div>
+                <CardTitle className="font-heading text-lg">Infrastructure & Resilience</CardTitle>
+                <CardDescription>Cloud, hybrid/on-prem deployments, DR, cyber-recovery and CI/CD.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <Badge variant="outline" className="text-xs">On-Prem</Badge>
+                  <Badge variant="outline" className="text-xs">DR</Badge>
+                  <Badge variant="outline" className="text-xs">CI/CD</Badge>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
-    
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
-          <Card className="group hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="flex items-center justify-between mb-2">
-                <Badge variant="secondary">Strategy</Badge>
-              </div>
-              <CardTitle className="font-heading text-lg">Strategy & Architecture</CardTitle>
-              <CardDescription>Advisory, compliance-aware roadmaps and enterprise architecture.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2 mt-3">
-                <Badge variant="outline" className="text-xs">Modernization</Badge>
-                <Badge variant="outline" className="text-xs">Compliance</Badge>
-                <Badge variant="outline" className="text-xs">Roadmaps</Badge>
-              </div>
-            </CardContent>
-          </Card>
-    
-          <Card className="group hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="flex items-center justify-between mb-2">
-                <Badge variant="secondary">Product</Badge>
-              </div>
-              <CardTitle className="font-heading text-lg">Data, AI & Product</CardTitle>
-              <CardDescription>
-                Data platforms, ML/LLMs, custom software, and digital product & branding for adoption.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2 mt-3">
-                <Badge variant="outline" className="text-xs">MLOps</Badge>
-                <Badge variant="outline" className="text-xs">Recommenders</Badge>
-                <Badge variant="outline" className="text-xs">Branding</Badge>
-              </div>
-            </CardContent>
-          </Card>
-    
-          <Card className="group hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="flex items-center justify-between mb-2">
-                <Badge variant="secondary">Infra</Badge>
-              </div>
-              <CardTitle className="font-heading text-lg">Infrastructure & Resilience</CardTitle>
-              <CardDescription>Cloud, hybrid/on-prem deployments, DR, cyber-recovery and CI/CD.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2 mt-3">
-                <Badge variant="outline" className="text-xs">On-Prem</Badge>
-                <Badge variant="outline" className="text-xs">DR</Badge>
-                <Badge variant="outline" className="text-xs">CI/CD</Badge>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
-    </section>
+      </section>
 
 
       {/* Featured Projects */}
