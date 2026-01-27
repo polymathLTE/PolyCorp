@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     "Lagos",
     "Nigeria",
     "Gbogbonise",
-    
-    
+
+
   ],
   authors: [{ name: "Polymath Corporation", url: "https://polymathcorp.works" }],
   creator: "Polymath Corporation",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     siteName: "Polymath Corporation Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/polymath_corp_logo.png",
         width: 1200,
         height: 630,
         alt: "Polymath Corporation - Integrated IT Advisory & Implementation",
@@ -80,9 +80,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Polymath Corporation - Integrated IT Advisory & Implementation",
     description:
-      "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in LLM fine-tuning and scalable data solutions.",
-    images: ["/og-image.png"],
-    creator: "@emmanuellawal", // REPLACE_ME: Add actual Twitter handle
+      "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in Compliance and scalable data solutions.",
+    images: ["/polymath_corp_logo.png"],
+    creator: "@PolymathCorpo",
   },
   robots: {
     index: true,
