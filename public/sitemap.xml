@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://emmanuellawal.dev/</loc>
+    <loc>https://polymathcorp.works/</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://emmanuellawal.dev/work</loc>
+    <loc>https://polymathcorp.works/work</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://emmanuellawal.dev/about</loc>
+    <loc>https://polymathcorp.works/about</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://emmanuellawal.dev/contact</loc>
+    <loc>https://polymathcorp.works/contact</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://emmanuellawal.dev/work/llm-finetuning</loc>
+    <loc>https://polymathcorp.works/work/llm-finetuning</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://emmanuellawal.dev/work/data-pipeline</loc>
+    <loc>https://polymathcorp.works/work/data-pipeline</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://emmanuellawal.dev/work/analytics-dashboard</loc>
+    <loc>https://polymathcorp.works/work/analytics-dashboard</loc>
     <lastmod>2024-01-01T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
