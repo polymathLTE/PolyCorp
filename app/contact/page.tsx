@@ -153,7 +153,7 @@ export default function ContactPage() {
                     <div className="text-center py-8">
                       <CheckCircle className="h-16 w-16 text-primary mx-auto mb-4" />
                       <h3 className="font-heading font-semibold text-xl text-foreground mb-2">Message Sent!</h3>
-                      <p className="text-muted-foreground mb-6">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                      <p className="text-muted-foreground mb-6">Thank you for reaching out. We'll get back to you within 24 hours.</p>
                       <Button onClick={() => setIsSubmitted(false)} variant="outline">
                         Send Another Message
                       </Button>
