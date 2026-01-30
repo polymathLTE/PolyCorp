@@ -146,9 +146,9 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {/* Financial Services */}
-            <Card>
+            <Card className="w-80">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Telecom & Connectivity */}
-            <Card>
+            <Card className="w-80">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
                   <div className="w-2 h-2 bg-secondary rounded-full"></div>
@@ -196,7 +196,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Energy, Utilities & Oil & Gas */}
-            <Card>
+            <Card className="w-80">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
                   <div className="w-2 h-2 bg-chart-3 rounded-full"></div>
@@ -220,7 +220,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Commerce & Retail */}
-            <Card>
+            <Card className="w-80">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
                   <div className="w-2 h-2 bg-chart-4 rounded-full"></div>
@@ -244,7 +244,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Data Infrastructure & AI Platforms */}
-            <Card>
+            <Card className="w-80">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center gap-2">
                   <div className="w-2 h-2 bg-chart-5 rounded-full"></div>
@@ -266,124 +266,6 @@ export default function AboutPage() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="font-heading font-bold text-3xl text-foreground mb-4">Our Journey</h2>
-            <p className="text-lg text-muted-foreground">
-              Key milestones and achievements in our mission to deliver innovative AI solutions.
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            {/* Experience */}
-            <div>
-              <h3 className="font-heading font-semibold text-xl text-foreground mb-6 flex items-center gap-2">
-                <Briefcase className="h-5 w-5 text-primary" />
-                Professional Experience
-              </h3>
-              <div className="space-y-6">
-                <Card>
-                  <CardContent className="pt-6">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <div>
-                        <h4 className="font-heading font-semibold text-lg text-foreground">
-                          Data Scientist
-                        </h4>
-                        <p className="text-muted-foreground"> Toloka AI</p>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
-                        <Calendar className="h-4 w-4" />
-                        <span> 2022 - Present</span>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Led cross-functional teams in developing machine learning solutions that improved
-                      business metrics by 30%. Specialized in LLM fine-tuning, predictive analytics, and automated data
-                      pipelines processing millions of records daily.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="pt-6">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <div>
-                        <h4 className="font-heading font-semibold text-lg text-foreground">
-                          Technical Consultant
-                        </h4>
-                        <p className="text-muted-foreground"> Toloka AI</p>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
-                        <Calendar className="h-4 w-4" />
-                        <span>2025 </span>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Developed and deployed machine learning models for customer segmentation and demand
-                      forecasting. Built ETL pipelines and created interactive dashboards that reduced reporting time by
-                      50%.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-
-            {/* Education */}
-            <div>
-              <h3 className="font-heading font-semibold text-xl text-foreground mb-6 flex items-center gap-2">
-                <GraduationCap className="h-5 w-5 text-secondary" />
-                Education
-              </h3>
-              <div className="space-y-6">
-                <Card>
-                  <CardContent className="pt-6">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <div>
-                        <h4 className="font-heading font-semibold text-lg text-foreground">
-                          Explore AI Academy: Diploma in Data Science
-                        </h4>
-                        <p className="text-muted-foreground"> Diploma: ALX Africa </p>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
-                        <Calendar className="h-4 w-4" />
-                        <span>Duration: 2023 - 2024</span>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Specialized in machine learning, statistical modeling, and big data analytics. Thesis
-                      focused on deep learning applications in natural language processing.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="pt-6">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <div>
-                        <h4 className="font-heading font-semibold text-lg text-foreground">
-                          Bachelor's in Information Technology
-                        </h4>
-                        <p className="text-muted-foreground"> Federal University of Technology, Akure (FUTA) </p>
-                      </div>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mt-2 md:mt-0">
-                        <Calendar className="h-4 w-4" />
-                        <span> 2021 - 2026</span>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Strong foundation in algorithms, data structures, and software engineering. Graduated
-                      with First Class Honors.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
           </div>
         </div>
       </section>
