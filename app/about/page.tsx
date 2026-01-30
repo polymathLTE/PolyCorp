@@ -12,6 +12,7 @@ import {
   Calendar,
   Award,
   Briefcase,
+  GraduationCap,
 } from "lucide-react"
 import Link from "next/link"
 
