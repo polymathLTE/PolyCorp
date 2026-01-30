@@ -102,8 +102,8 @@ export default function ContactPage() {
                 Contact
               </Link>
               <Button asChild size="sm">
-                <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
-                  Resume
+                <Link href="https://bit.ly/polymath_brochure" target="_blank" rel="noopener noreferrer">
+                  Brochure
                 </Link>
               </Button>
             </nav>
@@ -277,7 +277,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              {/* Social / Resume */}
+              {/* Social / Brochure */}
               <Card>
                 <CardHeader>
                   <CardTitle className="font-heading">Connect Online</CardTitle>
@@ -300,8 +300,8 @@ export default function ContactPage() {
                   </Link>
 
                   <Button asChild className="w-full">
-                    <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
-                      <Download className="mr-2 h-4 w-4" /> Download Resume
+                    <Link href="https://bit.ly/polymath_brochure" target="_blank" rel="noopener noreferrer">
+                      <Download className="mr-2 h-4 w-4" /> Download Brochure
                     </Link>
                   </Button>
                 </CardContent>

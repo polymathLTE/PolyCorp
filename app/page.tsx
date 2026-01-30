@@ -29,8 +29,8 @@ export default function HomePage() {
                 Contact
               </Link>
               <Button asChild size="sm">
-                <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
-                  Resume
+                <Link href="https://bit.ly/polymath_brochure" target="_blank" rel="noopener noreferrer">
+                  Brochure
                 </Link>
               </Button>
             </nav>
@@ -433,12 +433,12 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link
-                    href="https://bit.ly/Resume_LTE"
+                    href="https://bit.ly/polymath_brochure"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    Resume
+                    Brochure
                   </Link>
                 </li>
               </ul>

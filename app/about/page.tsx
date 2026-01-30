@@ -39,8 +39,8 @@ export default function AboutPage() {
                 Contact
               </Link>
               <Button asChild size="sm">
-                <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
-                  Resume
+                <Link href="https://bit.ly/polymath_brochure" target="_blank" rel="noopener noreferrer">
+                  Brochure
                 </Link>
               </Button>
             </nav>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                   </div>
 
                   <Button asChild className="w-full mt-6">
-                    <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://bit.ly/polymath_brochure" target="_blank" rel="noopener noreferrer">
                       <Download className="mr-2 h-4 w-4" />
                       Download Brochure
                     </Link>
