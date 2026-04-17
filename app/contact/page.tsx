@@ -188,7 +188,8 @@ export default function ContactPage() {
                             <SelectValue placeholder="Select your budget range" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="under-5k">Under $5,000</SelectItem>
+                            <SelectItem value="under-1k">Under $1,000</SelectItem>
+                            <SelectItem value="1k-5k">$1,000 - $5,000</SelectItem>
                             <SelectItem value="5k-15k">$5,000 - $15,000</SelectItem>
                             <SelectItem value="15k-50k">$15,000 - $50,000</SelectItem>
                             <SelectItem value="50k-plus">$50,000+</SelectItem>
