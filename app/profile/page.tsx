@@ -55,7 +55,7 @@ export default function ProfilePage() {
     ]
 
     const contact = [
-        { icon: Mail, label: "Email", value: "lawaltemmanuel@gmail.com", href: "mailto:lawaltemmanuel@gmail.com" },
+        { icon: Mail, label: "Email", value: "emmanueltlawal@gmail.com", href: "mailto:emmanueltlawal@gmail.com" },
         { icon: Phone, label: "Phone", value: "+234 706 553 3470", href: "tel:+2347065533470" },
         { icon: MapPin, label: "Location", value: "Lekki, Lagos" },
     ]
