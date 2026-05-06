@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Lora, Space_Mono } from "next/font/google"
 import { Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -18,6 +18,20 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   display: "swap",
   variable: "--font-poppins",
+})
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-lora",
+})
+
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-space-mono",
 })
 
 export const metadata: Metadata = {
@@ -109,7 +123,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable} ${lora.variable} ${spaceMono.variable} dark`}>
       <head>
         <script
           type="application/ld+json"

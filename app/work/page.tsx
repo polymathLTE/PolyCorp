@@ -16,7 +16,7 @@ const projects = [
     title: "RLHF Custom LLM Fine-tuning for Domain Expertise",
     description:
       "Fine-tuned large language models for specialized domain applications with improved accuracy and reduced hallucinations.",
-    category: "LLM",
+    category: "AI/ML Systems",
     tags: ["Python", "PyTorch", "Transformers", "Hugging Face", "CUDA"],
     image: "/ai-neural-network.png",
     featured: true,
@@ -29,7 +29,7 @@ const projects = [
     title: "Scalable ETL Pipeline Architecture",
     description:
       " Built a robust data pipeline processing 10M+ records daily with real-time monitoring and automated error handling.",
-    category: "ETL",
+    category: "Data Engineering",
     tags: ["Python", "Apache Airflow", "AWS", "PostgreSQL", "Docker"],
     image: "/data-pipeline-architecture.png",
     featured: true,
@@ -42,7 +42,7 @@ const projects = [
     title: " Executive Analytics Dashboard",
     description:
       " Interactive business intelligence dashboard providing real-time insights across multiple data sources.",
-    category: "Dashboard",
+    category: "Financial Services",
     tags: ["Power BI", "SQL", "Python", "DAX", "Azure"],
     image: "/business-analytics-dashboard.png",
     featured: true,
@@ -55,7 +55,7 @@ const projects = [
     title: " Predictive Analytics Model",
     description:
       " Machine learning model for forecasting business metrics with 95% accuracy using ensemble methods.",
-    category: "ML",
+    category: "AI/ML Systems",
     tags: ["Python", "Scikit-learn", "XGBoost", "Pandas", "Jupyter"],
     image: "/machine-learning-prediction-charts.png",
     featured: false,
@@ -68,7 +68,7 @@ const projects = [
     title: " Cloud Infrastructure Automation",
     description:
       " Automated cloud infrastructure deployment and scaling using Infrastructure as Code principles.",
-    category: "Cloud",
+    category: "Infrastructure",
     tags: ["AWS", "Terraform", "Docker", "Kubernetes", "CI/CD"],
     image: "/cloud-infrastructure-diagram.png",
     featured: false,
@@ -81,7 +81,7 @@ const projects = [
     title: " NLP Sentiment Analysis System",
     description:
       " Real-time sentiment analysis system processing social media data with custom BERT fine-tuning.",
-    category: "ML",
+    category: "AI/ML Systems",
     tags: ["Python", "BERT", "TensorFlow", "NLP", "API"],
     image: "/sentiment-analysis-visualization.png",
     featured: false,
@@ -91,7 +91,7 @@ const projects = [
   },
 ]
 
-const categories = ["All", "ML", "LLM", "ETL", "Dashboard", "Cloud"]
+const categories = ["All", "AI/ML Systems", "Financial Services", "Infrastructure", "Data Engineering", "Advisory"]
 
 export default function WorkPage() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -110,44 +110,57 @@ export default function WorkPage() {
   const otherProjects = filteredProjects.filter((project) => !project.featured)
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background dark">
       {/* Header */}
-      <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+      <header className="border-b border-border/50 bg-background/80 backdrop-blur-xl sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <Link href="/" className="font-heading font-bold text-xl text-foreground">
-                Polymath Corporation
+              <Link href="/" className="flex items-center gap-2">
+                <Image
+                  src="/polymath_corp_header.png"
+                  alt="Polymath Corporation"
+                  height={40}
+                  width={200}
+                  className="h-10 w-auto object-contain"
+                  priority
+                />
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/work" className="text-primary font-medium">
+              <Link href="/work" className="text-secondary font-medium">
                 Work
               </Link>
-              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/about" className="text-muted-foreground hover:text-secondary transition-colors font-medium">
                 About
               </Link>
-              <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/contact" className="text-muted-foreground hover:text-secondary transition-colors font-medium">
                 Contact
               </Link>
-              <Button asChild size="sm">
-                <Link href="https://bit.ly/Resume_LTE" target="_blank" rel="noopener noreferrer">
-                  Resume
+            </nav>
+            <div className="flex items-center gap-4">
+              <Button asChild size="sm" variant="ghost" className="hidden md:flex text-muted-foreground hover:text-secondary">
+                <Link href="https://bit.ly/polymath_brochure" target="_blank" rel="noopener noreferrer">
+                  Brochure
                 </Link>
               </Button>
-            </nav>
+              <Button asChild size="sm" className="bg-secondary text-background hover:bg-secondary/90 font-bold">
+                <Link href="/contact">Talk to Us</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <div className="max-w-3xl">
-            <h1 className="font-heading font-bold text-4xl sm:text-5xl text-foreground mb-6 text-balance">My Work</h1>
+          <div className="max-w-3xl mb-12">
+            <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground mb-6 text-balance leading-tight">
+              Experience & Projects
+            </h1>
             <p className="text-xl text-muted-foreground mb-8 text-pretty leading-relaxed">
-              A collection of projects showcasing my expertise in machine learning, data engineering, and AI systems.
-              Each project demonstrates practical solutions to real-world challenges.
+              Real work across AI/ML, infrastructure, fintech, and data engineering. Every project shows measurable impact.
             </p>
           </div>
         </div>
@@ -165,7 +178,7 @@ export default function WorkPage() {
                   variant={selectedCategory === category ? "default" : "outline"}
                   size="sm"
                   onClick={() => setSelectedCategory(category)}
-                  className="text-sm"
+                  className={`text-sm ${selectedCategory === category ? "bg-primary hover:bg-primary/90" : "border-border/50 hover:border-secondary/50 text-foreground hover:text-secondary"}`}
                 >
                   {category}
                 </Button>
@@ -179,7 +192,7 @@ export default function WorkPage() {
                 placeholder="Search projects..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10"
+                className="pl-10 bg-background/50 border-border/50 text-foreground placeholder:text-muted-foreground focus:border-secondary"
               />
             </div>
           </div>
@@ -238,7 +251,7 @@ export default function WorkPage() {
 
 function ProjectCard({ project, featured = false }: { project: any; featured?: boolean }) {
   return (
-    <Card className={`group hover:shadow-lg transition-all duration-300 ${featured ? "ring-1 ring-primary/20" : ""}`}>
+    <Card className={`group hover:shadow-lg hover:shadow-secondary/10 transition-all duration-300 bg-card border-border/50 hover:border-secondary/50 ${featured ? "ring-1 ring-secondary/20" : ""}`}>
       <div className="relative overflow-hidden rounded-t-lg">
         <Image
           src={project.image || "/placeholder.svg"}
@@ -248,13 +261,13 @@ function ProjectCard({ project, featured = false }: { project: any; featured?: b
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 left-4">
-          <Badge variant="secondary" className="bg-background/90 backdrop-blur">
+          <Badge variant="secondary" className="bg-background/90 backdrop-blur text-xs">
             {project.category}
           </Badge>
         </div>
         {featured && (
           <div className="absolute top-4 right-4">
-            <Badge className="bg-primary text-primary-foreground">Featured</Badge>
+            <Badge className="bg-secondary text-background text-xs font-bold">Featured</Badge>
           </div>
         )}
       </div>
@@ -262,48 +275,48 @@ function ProjectCard({ project, featured = false }: { project: any; featured?: b
       <CardHeader>
         <div className="flex items-start justify-between gap-2 mb-2">
           <div className="flex-1">
-            <CardTitle className="font-heading text-lg leading-tight group-hover:text-primary transition-colors">
+            <CardTitle className="font-heading text-lg leading-tight group-hover:text-secondary transition-colors">
               {project.title}
             </CardTitle>
-            <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 mt-2 text-xs text-muted-foreground">
               <span>{project.year}</span>
               <span>•</span>
               <span>{project.status}</span>
             </div>
           </div>
-          <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
+          <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-secondary transition-colors flex-shrink-0" />
         </div>
-        <CardDescription className="text-sm leading-relaxed">{project.description}</CardDescription>
+        <CardDescription className="text-sm leading-relaxed text-muted-foreground">{project.description}</CardDescription>
       </CardHeader>
 
       <CardContent>
         <div className="space-y-4">
           <div className="flex flex-wrap gap-1">
             {project.tags.slice(0, 4).map((tag: string) => (
-              <Badge key={tag} variant="outline" className="text-xs">
+              <Badge key={tag} variant="outline" className="text-xs bg-secondary/10 text-secondary border-0">
                 {tag}
               </Badge>
             ))}
             {project.tags.length > 4 && (
-              <Badge variant="outline" className="text-xs">
+              <Badge variant="outline" className="text-xs bg-secondary/10 text-secondary border-0">
                 +{project.tags.length - 4}
               </Badge>
             )}
           </div>
 
           {project.metrics && (
-            <div className="text-sm text-muted-foreground">
-              <strong>Impact:</strong> {project.metrics}
+            <div className="text-sm text-secondary font-semibold">
+              📊 {project.metrics}
             </div>
           )}
 
           <div className="flex gap-2">
-            <Button asChild size="sm" className="flex-1">
+            <Button asChild size="sm" className="flex-1 bg-primary hover:bg-primary/90">
               <Link href={`/work/${project.id}`}>
                 View Case Study <ArrowRight className="ml-2 h-3 w-3" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="sm">
+            <Button asChild variant="outline" size="sm" className="border-border/50 hover:border-secondary/50">
               <Link href="#" target="_blank" rel="noopener noreferrer">
                 <Github className="h-3 w-3" />
               </Link>

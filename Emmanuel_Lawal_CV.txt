@@ -1,0 +1,61 @@
+Emmanuel Temitope Lawal
+Software and ML Engineer
+Software Development, ML Deployment, Data Quality, LLM Fine-Tuning
+Lekki, Lagos · +234 706 553 3470 · lawaltemmanuel@gmail.com
+LinkedIn: www.linkedin.com/in/emmanuel-lawal-temitope
+GitHub: https://github.com/polymathLTE
+Portfolio: https://polymathcorp.works | Resume: https://bit.ly/Resume_LTE
+
+SUMMARY
+Software and ML Engineer with experience in LLM evaluation, RLHF, red teaming, data pipelines, and production deployment. Strong Python, Linux, API, and scripting skills. Focused on clear workflows, data quality, and reliable execution.
+
+Core Skills
+Machine Learning · LLM Fine-tuning · Model Evaluation · Data Engineering · Evaluation and Monitoring · Database admin · Vector Search/optimization · System admin · Scripting · Data Recovery · IT Infrastructure design and deployment
+
+EXPERIENCE
+
+Trajectory Labs; LLM Sec. Red Teamer | March 2026
+● Designed adversarial scenarios to check robustness, safety, and recovery from failed steps.
+● Shared structured findings to improve trajectory quality and evaluation coverage.
+● Tested LLM and agent workflows for weak points in multi-step task execution, instruction following and tool use.
+
+Toloka; Data Scientist/ML Engineer | May 2024 – July 2025
+● Led LLM fine-tuning experiments (RL / RLHF) for rare data scenarios, defined evaluation metrics.
+● Built a human annotation pipeline for RLHF with verification and compliance, improving label quality and speed, reducing rework by 26%
+● Developed RAG/retrieval stack and evaluation tools for obscure media, containerized inference for deployment.
+
+ALX Africa; Data Scientist | July 2023 – September 2024
+● Built and evaluated ML/NLP models using Python and scikit-learn – custom pricing and recommendation engines for e-commerce platforms.
+● Designed ETL pipelines, scraping setups, performed data cleaning, feature engineering, and complex SQL for production-ready datasets – a national water reclamation project (modelling water demand, high traffic times, and solutions)
+● Dashboard for reporting student/learners' progress and modelling churn.
+
+Dialectica; Technical Consultant | July 2025 – Present
+● Provide technical advice on payments integration, payroll options (traditional and crypto), and system architecture.
+● Consult on AI/ML strategy and data governance to align solutions with business and regulatory requirements.
+
+NTS Africa Services Limited / Dell Technologies; Engineer | July 2025 – December 2025
+● Deployed Dell Hyper Converged Infrastructure and Disaster Recovery solutions for a major Nigerian financial institution
+● IMAC server deployment for major financial and regulatory institutions
+● On-prem and hybrid server deployments using Dell PowerEdge and cloud providers
+● Deployed Cyber Recovery Services (CRS) at major financial institution
+
+ALX Africa; Student Mentor | September 2025 – Present
+● Mentor students on Python, ML best practices, model evaluation, and production readiness.
+● Review projects, give code walkthroughs, and guide students on deployment and testing.
+
+ALX Africa; Software Engineer | July 2022 – September 2025
+● Implemented Flask APIs consumed by dashboards and client apps; containerized services with Docker, Nginx and Gunicorn for consistent staging and production deployments.
+● Designed ETL pipelines and APIs for dashboard reporting, optimizing payloads and query performance for high-traffic scenarios
+● Worked across systems & Linux, web/backend, DevOps/networking, and testing to deliver robust software modules.
+
+Pesoka Computers Nigeria Ltd; Software Engineer | September 2019 – August 2021
+● Designed and implemented ETL pipelines and financial research systems.
+● Built custom monitoring software for power plant security. Built front-end monitoring dashboards for plant operations, improving fault visibility and operator response times
+● Built fraud detection solutions and an EDMS for power plant operations.
+● Implemented fraud detection and loan application scoring in a Microfinance loan application, improving repayment on micro-loans by 90%.
+
+SELECTED PROJECTS
+● Volatility Pricing engine - deployed pricing engine for Fiat and cryptocurrencies. Useful for both detecting and predicting regime change.
+● Drought Prediction System, Northern Nigeria - Built and evaluated drought prediction models, achieving ~0.85 AUC for moderate and severe cases under sparse, noisy conditions
+● Microfinance Credit App - Deployed client onboarding and credit scoring platform.
+● Built an enterprise trading platform that models trading signal and executes and reports on trade performance
