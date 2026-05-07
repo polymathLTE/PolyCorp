@@ -219,7 +219,7 @@ export default function HomePage() {
         <div className="orb-content container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="text-center mb-12">
             <p className="text-sm uppercase tracking-widest text-secondary font-bold mb-2">Trusted By</p>
-            <h2 className="text-2xl font-heading font-bold text-foreground">Companies building at scale</h2>
+            <h2 className="text-2xl font-heading font-bold" style={{ color: '#050d8a' }}>Companies building at scale</h2>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-12">
             {clientLogos.map((client) => (
