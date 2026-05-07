@@ -20,6 +20,8 @@ const clientLogos = [
   { name: "Trajectory Labs", path: "/clients/trajectory_labs.svg" },
   { name: "Toloka", path: "/clients/toloka.svg" },
   { name: "Dialectica", path: "/clients/dialectica.svg" },
+  { name: "Tarap", path: "/clients/tarapint.svg" },
+  { name: "Tarap Cargo", path: "/clients/tarap_cargo.svg" },
 ]
 
 const services = [
