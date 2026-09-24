@@ -1,0 +1,1993 @@
+You are redesigning and rebuilding the entire Polymath Corporation website:
+
+https://www.polymathcorp.works/
+
+Treat this as a full brand, UX, content, information architecture, visual design and implementation revamp, not a cosmetic refresh.
+
+Before changing anything, inspect the existing website, all accessible routes, existing components, content, project data, assets, typography, spacing, responsive behaviour, metadata, and interactions. Understand what is currently there, then replace weak or stale material with a coherent new system.
+
+Use the existing site as source material, not as the design template.
+
+Also use the attached Polymath Corporation logo as the primary visual identity reference.
+
+The goal is to make Polymath feel like a serious, technically sophisticated, builder-led engineering studio. It should feel credible to technical recruiters, founders, potential clients, collaborators and engineering teams.
+
+The site should communicate:
+
+"We turn difficult ideas into working systems."
+
+It should make it immediately clear that Polymath works across:
+
+AI
+Software
+Data
+Automation
+Connected Systems
+Product Engineering
+
+The company should feel small enough that the people building the system are close to the problem, but technically capable enough to handle difficult multidisciplinary work.
+
+Do not make Polymath look like a giant consultancy.
+
+Do not make it look like a generic "AI agency."
+
+Do not make it look like a developer portfolio.
+
+Do not make it look like a SaaS startup selling a generic AI product.
+
+It should feel like an engineering practice with strong product instincts.
+
+==================================================
+1. BRAND FOUNDATION
+==================================================
+
+The existing logo is the source of truth for the visual identity.
+
+The logo establishes:
+
+- strong cobalt/electric blue
+- white
+- thin geometric typography
+- a futuristic and mathematical quality
+- an experimental star-like/radial symbol
+- high contrast
+- clean geometry
+- a distinctive technical personality
+
+The primary blue in the supplied logo is approximately:
+
+#0A17D3
+
+Use that as the main working brand colour unless the exact logo asset contains a more authoritative value.
+
+Polymath's existing visual identity should be amplified, not replaced.
+
+The brand philosophy is:
+
+DREAM. DARE. DO.
+
+Interpret it as:
+
+DREAM
+See what could exist.
+
+DARE
+Question assumptions and constraints.
+
+DO
+Build, test and ship.
+
+Core positioning:
+
+WE TURN DIFFICULT IDEAS INTO WORKING SYSTEMS.
+
+Supporting positioning:
+
+AI, software and data systems built for real problems.
+
+Possible supporting language:
+
+From problem to system.
+From idea to implementation.
+Build from the problem.
+Design for constraints.
+Measure what matters.
+Ship what works.
+
+Avoid generic agency language such as:
+
+"transform your business"
+"unlock the future"
+"cutting-edge solutions"
+"revolutionary AI"
+"world-class technology"
+"innovative digital transformation"
+"leading provider"
+"next-generation solutions"
+
+Copy should sound like an engineer and product builder speaking clearly.
+
+==================================================
+2. VISUAL DIRECTION
+==================================================
+
+The visual concept is:
+
+GEOMETRIC TECHNICALISM
+
+The site should combine:
+
+Polymath's existing geometric identity
++
+CrunchDAO's technical/data/research atmosphere
++
+Linear's information hierarchy
++
+Resend's brand discipline
++
+Vercel's engineering restraint
++
+Stripe's clarity when explaining complex systems
+
+Use these as references, not templates.
+
+Reference websites:
+
+CrunchDAO
+https://www.crunchdao.com/
+
+Use CrunchDAO for:
+- technical atmosphere
+- research/data presentation
+- system diagrams
+- data visualisation
+- technical labels
+- grid systems
+- experimental editorial layouts
+
+Linear
+https://linear.app/
+
+Use Linear for:
+- hierarchy
+- spacing
+- typography
+- product storytelling
+- interaction quality
+- restraint
+
+Resend
+https://resend.com/
+
+Use Resend for:
+- brand discipline
+- technical personality
+- typography
+- narrative
+- sophisticated simplicity
+
+Vercel
+https://vercel.com/
+
+Use Vercel for:
+- engineering confidence
+- minimalism
+- restrained interaction
+- strong hierarchy
+
+Stripe
+https://stripe.com/
+
+Use Stripe for:
+- explaining technical concepts clearly
+- outcome-oriented content
+- information architecture
+- business-facing clarity
+
+Do NOT simply recreate any of these websites.
+
+The result must feel unmistakably like Polymath.
+
+The visual reference hierarchy should be:
+
+Polymath identity first
+CrunchDAO technical atmosphere second
+Linear/Resend/Vercel/Stripe as supporting references
+
+==================================================
+3. COLOR SYSTEM
+==================================================
+
+Polymath is LIGHT-FIRST.
+
+Do not make a black/dark theme the primary visual identity.
+
+The main palette should be:
+
+PRIMARY BLUE
+#0A17D3
+
+DEEP BLUE
+#07108F
+
+WHITE
+#FFFFFF
+
+NEAR BLACK
+#111111
+
+SECONDARY TEXT
+#666666
+
+PALE BLUE
+#EEF0FF
+
+PALE CYAN
+#E8FFFE
+
+BORDER
+#D9DDF5
+
+SIGNAL ORANGE
+#FF7A00
+
+Blue is the main brand colour.
+
+White is the primary canvas.
+
+Black is used for information and text.
+
+Orange is a secondary signal colour.
+
+Use orange deliberately for:
+
+- primary actions
+- active states
+- selected elements
+- important annotations
+- system indicators
+- highlighted data points
+- section numbers
+- meaningful emphasis
+
+Do NOT use orange everywhere.
+
+Do NOT make orange a second primary brand colour.
+
+The colour relationship should feel like:
+
+BLUE = POLYMATH / ENVIRONMENT
+
+BLACK = INFORMATION
+
+ORANGE = SIGNAL / ACTION
+
+Use deep blue and pale blue to create hierarchy.
+
+Avoid:
+- purple AI gradients
+- rainbow gradients
+- generic blue SaaS gradients
+- excessive neon
+- excessive glassmorphism
+- translucent blobs
+- random colourful UI
+
+==================================================
+4. LOGO AND BRAND GEOMETRY
+==================================================
+
+Use the supplied logo as the official logo.
+
+Do not recreate the logo with ordinary web text.
+
+Do not distort it.
+
+Do not add generic gradients to it.
+
+The star-like symbol should inspire supporting visual language.
+
+Use the concepts behind it:
+
+- radial geometry
+- points
+- mathematical forms
+- symmetry
+- transformation
+- motion
+- systems
+- convergence
+
+Potential uses:
+- subtle backgrounds
+- data visualisations
+- section dividers
+- system diagrams
+- loading states
+- interactive indicators
+- small decorative geometry
+
+Do not turn the logo into a mascot.
+
+The geometry should be subtle and sophisticated.
+
+==================================================
+5. TYPOGRAPHY
+==================================================
+
+The logo is geometric, thin and futuristic.
+
+The website typography should feel compatible with that identity.
+
+Evaluate these font families:
+
+Sora
+Space Grotesk
+Manrope
+Plus Jakarta Sans
+
+Preferred initial direction:
+
+Sora or Space Grotesk
+
+Use a monospace family for technical metadata.
+
+Preferred:
+
+IBM Plex Mono
+or
+Geist Mono
+
+Use typography as one of the main visual elements.
+
+Large headings should be large and confident.
+
+Use tight but readable line-height.
+
+Use clean body text with strong legibility.
+
+Use monospace text for:
+
+- project metadata
+- years
+- status
+- technical categories
+- system labels
+- architecture annotations
+- small data labels
+
+Example:
+
+FIRESHOW
+
+AI / COMPUTER VISION / IOT
+INDEPENDENT BUILD
+2026
+
+Typography should feel editorial and technical without becoming hard to read.
+
+==================================================
+6. LAYOUT SYSTEM
+==================================================
+
+Use a structured 12-column desktop grid.
+
+Target maximum content width:
+approximately 1200-1280px.
+
+Use strong alignment.
+
+Use generous whitespace.
+
+Use horizontal rules and thin borders.
+
+Use a consistent spacing system.
+
+Avoid visually crowded pages.
+
+Avoid the common "AI agency" pattern of:
+
+rounded card
+gradient background
+icon
+headline
+three bullets
+
+The design should feel more like an engineering publication, technical studio and product system.
+
+Recommended radius:
+4px to 12px.
+
+Do not make every element extremely rounded.
+
+Use square/rectangular structures where appropriate.
+
+==================================================
+7. LIGHT AND DARK SECTIONS
+==================================================
+
+The site should be predominantly white.
+
+Create contrast through large full-width colour sections.
+
+Example visual cadence:
+
+WHITE
+BLUE
+WHITE
+DEEP BLUE
+WHITE
+
+Use blue sections for major statements, philosophy, selected work or system concepts.
+
+Use deep/near-black sections selectively for technical architecture, code-like information or highly technical content.
+
+Do not make the entire site dark.
+
+The overall first impression should be blue + white.
+
+==================================================
+8. MOTION AND INTERACTION
+==================================================
+
+Motion should reinforce the idea of systems, information and engineering.
+
+Good motion:
+
+- diagrams connecting
+- data points appearing
+- subtle status indicators
+- project metadata revealing
+- restrained hover states
+- small directional movements
+- section reveal animations
+- charts animating into place
+- radial/logo-inspired motion
+
+Do not use motion simply to make the site flashy.
+
+Avoid:
+
+- giant WebGL scenes
+- excessive particle systems
+- mouse-following blobs
+- constant parallax
+- scroll hijacking
+- random 3D objects
+- excessive bouncing
+- animations that slow the page down
+
+The website itself should feel engineered.
+
+Fast.
+Precise.
+Intentional.
+Responsive.
+
+==================================================
+9. CORE CONTENT PRINCIPLE
+==================================================
+
+The new site must be evidence-driven.
+
+The current site contains stale, generic and potentially overextended claims.
+
+Audit all existing content carefully.
+
+Remove, rewrite or qualify anything that cannot be verified.
+
+Do not invent:
+- clients
+- customers
+- certifications
+- awards
+- performance figures
+- revenue figures
+- user counts
+- uptime figures
+- scale claims
+- industry claims
+- partnerships
+- production deployments
+
+Do not use metrics merely because they make a section look impressive.
+
+A metric is only allowed when its source and meaning are defensible.
+
+For example:
+
+Good:
+"Tested with 100+ students during product iteration."
+
+Good:
+"AUC 0.95 on the specified holdout set."
+
+Good:
+"Built an end-to-end prototype combining ESP32 hardware, machine learning, computer vision, Firebase and Flutter."
+
+Weak:
+"10x business growth."
+
+Weak:
+"99.9% uptime."
+
+Weak:
+"50M+ records processed."
+
+unless those values are actually documented, measurable and attributable to the relevant project.
+
+Whenever a performance number is used, provide enough context to understand:
+
+- what was measured
+- what dataset/system was measured
+- timeframe
+- evaluation method
+- relevant conditions
+
+Prefer precise and defensible evidence over impressive-sounding claims.
+
+==================================================
+10. OWNERSHIP AND PROJECT CONTEXT
+==================================================
+
+The site must distinguish different types of work.
+
+Do not make everything look like a Polymath client engagement.
+
+Use explicit project-context labels:
+
+INDEPENDENT BUILD
+INDEPENDENT PRODUCT
+RESEARCH
+ACADEMIC PROJECT
+PROFESSIONAL WORK
+CLIENT WORK
+CONSULTING
+EXPERIMENT
+
+This is essential for credibility.
+
+Examples:
+
+FireShow
+INDEPENDENT BUILD
+
+MathQuest
+INDEPENDENT PRODUCT
+
+Tax Compliance & Revenue Assurance
+RESEARCH / ACADEMIC
+
+Drought Prediction
+RESEARCH / ACADEMIC
+
+Toloka work
+PROFESSIONAL WORK
+
+Uni-Shuttle
+PROFESSIONAL WORK
+
+Dell/NTS infrastructure work
+PROFESSIONAL WORK
+
+Consulting work
+CONSULTING
+
+Never describe external employment or professional engagements as Polymath clients unless that is actually true.
+
+==================================================
+11. SITE INFORMATION ARCHITECTURE
+==================================================
+
+Use this primary navigation:
+
+WORK
+CAPABILITIES
+ABOUT
+BRIEF
+CONTACT
+
+Primary CTA:
+
+START A PROJECT
+
+The Emmanuel profile should be accessible from About and/or the footer.
+
+Suggested site structure:
+
+/
+ /work
+ /work/fire-show
+ /work/mathquest
+ /work/tax-compliance-anomaly-detection
+ /work/drought-prediction
+ /work/edms-rag
+ /work/bellotrade
+
+ /capabilities
+ /about
+ /profiles/emmanuel
+ /brief
+ /contact
+
+Do not create unnecessary pages.
+
+Do not create a separate page for every tiny experiment.
+
+Use full case-study pages only for important work.
+
+Use compact supporting project cards for smaller work.
+
+==================================================
+12. HOMEPAGE
+==================================================
+
+The homepage should make the company understandable within approximately 10 seconds.
+
+HERO
+
+Eyebrow:
+
+POLYMATH CORPORATION
+
+Main headline:
+
+WE TURN DIFFICULT
+IDEAS INTO
+WORKING SYSTEMS.
+
+Supporting text:
+
+AI, software and data systems built for real problems, from first problem definition to working implementation.
+
+Primary CTA:
+
+START A PROJECT
+
+Secondary CTA:
+
+VIEW THE WORK
+
+Technical metadata strip:
+
+AI SYSTEMS
+SOFTWARE
+DATA
+AUTOMATION
+CONNECTED SYSTEMS
+
+The hero should feel editorial and typographic.
+
+Use the brand blue strongly.
+
+Use orange selectively on the primary action or a small technical status indicator.
+
+Do not put a giant fake metric wall in the hero.
+
+==================================================
+13. HOMEPAGE SELECTED WORK
+==================================================
+
+The first three featured projects should be:
+
+1. FireShow
+2. MathQuest
+3. Tax Compliance & Revenue Assurance
+
+These represent three important strengths:
+
+FireShow:
+AI + computer vision + IoT + full-stack engineering
+
+MathQuest:
+product engineering + mobile/PWA + real users + AI/OCR
+
+Tax Compliance:
+machine learning + financial systems + anomaly detection + research
+
+FireShow should have strong visual prominence.
+
+PROJECT CARD EXAMPLE:
+
+01
+
+FIRESHOW
+
+AI / COMPUTER VISION / IOT
+INDEPENDENT BUILD
+2026
+
+AI-powered fire risk prediction and computer vision detection system.
+
+STATUS:
+WORKING PROTOTYPE
+
+[PROJECT IMAGE]
+
+VIEW CASE STUDY →
+
+MathQuest should show:
+
+PRODUCT / MOBILE / AI
+INDEPENDENT PRODUCT
+LIVE PWA
+
+Provide a direct live-product link:
+
+https://mathquest.tech/
+
+Tax Compliance should be clearly labeled as research.
+
+Do not present academic/research work as a commercial deployed system.
+
+==================================================
+14. HOMEPAGE CAPABILITIES
+==================================================
+
+Section headline:
+
+WHAT WE BUILD
+
+Use five capabilities:
+
+PRODUCT ENGINEERING
+
+Web, mobile, backend, APIs, internal tools and operational platforms.
+
+AI ENGINEERING
+
+Machine learning, computer vision, LLM applications, evaluation and AI integration.
+
+DATA & DECISION SYSTEMS
+
+Analytics, anomaly detection, forecasting, recommendation systems and decision support.
+
+AUTOMATION & INTEGRATION
+
+Workflow automation, document processing, API integrations and operational tooling.
+
+CONNECTED SYSTEMS
+
+Embedded systems, IoT, telemetry and device-to-cloud systems.
+
+Do not create dozens of tiny service categories.
+
+==================================================
+15. HOMEPAGE PROCESS
+==================================================
+
+Headline:
+
+FROM PROBLEM TO SYSTEM
+
+Use six stages:
+
+01 UNDERSTAND
+Define the real problem.
+
+02 DESIGN
+Choose the simplest useful system.
+
+03 BUILD
+Prototype the critical path.
+
+04 TEST
+Measure against reality.
+
+05 SHIP
+Put it in the hands of users.
+
+06 IMPROVE
+Learn, refine and scale.
+
+Use blue as the structural colour.
+
+Use orange as an indicator for active steps or important numbers.
+
+==================================================
+16. HOMEPAGE POLYMATH PHILOSOPHY
+==================================================
+
+Create a strong section around:
+
+DREAM.
+DARE.
+DO.
+
+Explain:
+
+DREAM
+See what could exist.
+
+DARE
+Challenge assumptions and constraints.
+
+DO
+Build, test and ship it.
+
+Use large typography and geometric visual treatment.
+
+This should become part of the brand identity.
+
+==================================================
+17. HOMEPAGE FOUNDER SECTION
+==================================================
+
+Introduce:
+
+Emmanuel Lawal
+
+AI Engineer · Software Engineer · Product Builder
+
+Use a real professional photo if available.
+
+Copy should communicate:
+
+I design and build systems across AI, software and data, from early prototypes to production-oriented implementations.
+
+Then:
+
+VIEW PROFILE →
+
+Do not make this section excessively biographical.
+
+==================================================
+18. POLYMATH BRIEF
+==================================================
+
+Create a section called:
+
+THE POLYMATH BRIEF
+
+This is not a generic marketing blog.
+
+It should be an engineering/editorial space for:
+
+AI systems
+software engineering
+data
+product experiments
+technical decisions
+constraints
+research
+building in emerging markets
+lessons from real systems
+
+Tone:
+technical
+curious
+practical
+clear
+
+Example topics:
+
+Designing AI systems for unreliable connectivity.
+What anomaly detection looks like without confirmed fraud labels.
+Why offline-first changes product architecture.
+Building useful ML systems with imperfect data.
+What happens when an AI prototype becomes a real product.
+
+Only feature this section once actual content exists.
+
+Do not create an empty blog structure simply for visual completeness.
+
+==================================================
+19. WORK PAGE
+==================================================
+
+The /work page should be one of the strongest pages on the website.
+
+Headline:
+
+SELECTED WORK
+
+Supporting:
+
+Systems, products and experiments I've designed and built.
+
+Filters:
+
+ALL
+AI
+PRODUCTS
+DATA
+SYSTEMS
+RESEARCH
+
+Do not mix industries, capabilities and engagement types in the primary filter system.
+
+Each project should internally support multiple categories.
+
+PROJECT METADATA:
+
+Title
+Description
+Year
+Project type
+Role
+Status
+Categories
+Evidence
+Links
+
+Recommended project cards:
+
+01 FireShow
+02 MathQuest
+03 Tax Compliance & Revenue Assurance
+04 Drought Prediction
+05 EDMS / RAG Decision Support
+06 Bellotrade / Tarapint
+
+Then supporting work:
+
+Toloka
+Uni-Shuttle
+Pesoka
+Dell / NTS
+Trajectory Labs
+Dialectica
+Cattle Transport Monitoring
+AgriWise
+Other verified projects
+
+Do not make every supporting project look like a major commercial case study.
+
+==================================================
+20. FLAGSHIP PROJECTS
+==================================================
+
+The first six flagship projects should be:
+
+FIRESHOW
+
+AI-powered fire risk prediction and computer vision detection.
+
+Tags:
+AI
+Computer Vision
+IoT
+Flutter
+ESP32
+
+Context:
+Independent Build
+
+Status:
+Working prototype
+
+Important factual detail:
+FireShow uses Flutter, not React Native.
+
+MATHQUEST
+
+Interactive mathematics learning platform.
+
+Tags:
+Product
+Mobile/PWA
+AI
+OCR
+Offline-first
+
+Context:
+Independent Product
+
+Status:
+Live PWA
+
+Live URL:
+https://mathquest.tech/
+
+MathQuest currently has a public PWA presence.
+
+TAX COMPLIANCE & REVENUE ASSURANCE
+
+Machine-learning anomaly detection system for tax compliance and revenue assurance.
+
+Tags:
+Research
+Anomaly Detection
+Financial Systems
+Machine Learning
+
+Context:
+Academic/Research
+
+Do not present as a commercial tax product.
+
+DROUGHT PREDICTION
+
+Spatiotemporal drought prediction using climate, satellite and soil-moisture data.
+
+Tags:
+Research
+Time Series
+Deep Learning
+Geospatial ML
+
+Context:
+Academic/Research
+
+EDMS / RAG DECISION SUPPORT
+
+Enterprise document and reporting system using retrieval-augmented generation, timeframe/authorization-aware access and decision support.
+
+Tags:
+AI
+RAG
+Enterprise Systems
+Document Intelligence
+
+Clearly state its project context based on the actual work.
+
+BELLOTRADE / TARAPINT
+
+Commercial/product software systems.
+
+Use these to demonstrate conventional software and product engineering.
+
+==================================================
+21. PROJECT PAGE STRUCTURE
+==================================================
+
+Every flagship project must use a consistent case-study structure.
+
+1. HERO
+
+Project name
+Short description
+Project context
+Year
+Role
+Status
+Categories
+
+2. THE PROBLEM
+
+Explain:
+- what the problem is
+- who experiences it
+- why it matters
+- constraints
+
+3. CONTEXT
+
+Explain whether the project was:
+- independent
+- academic
+- professional
+- consulting
+- client
+- experimental
+
+4. MY ROLE
+
+Be explicit about what Emmanuel personally did.
+
+Do not use vague language such as:
+"worked on"
+"helped with"
+"contributed to"
+
+Use accurate descriptions such as:
+"Designed and built..."
+"Implemented..."
+"Developed..."
+"Architected..."
+"Led..."
+
+5. THE SOLUTION
+
+Explain the actual system.
+
+6. ARCHITECTURE
+
+Use a real architecture diagram.
+
+Example:
+
+SENSORS
+↓
+FEATURE PIPELINE
+↓
+MODEL
+↓
+BACKEND
+↓
+APPLICATION
+
+Use Polymath blue and orange.
+
+7. IMPLEMENTATION
+
+Explain technical implementation.
+
+Do not just list frameworks.
+
+Explain why major technical choices were made.
+
+8. HARD PARTS
+
+Explain the difficult engineering decisions.
+
+This section is very important.
+
+Examples:
+- noisy data
+- unreliable connectivity
+- offline-first synchronisation
+- lack of labels
+- model validation
+- device constraints
+- deployment constraints
+- API integration
+- user feedback
+- data quality
+
+9. RESULTS / EVALUATION
+
+Use only defensible metrics.
+
+For research:
+include dataset, split and metric context.
+
+For products:
+include actual user testing or observed adoption where verified.
+
+For prototypes:
+describe demonstrated capability honestly.
+
+10. CURRENT STATUS
+
+Use:
+LIVE
+DEMO
+WORKING PROTOTYPE
+RESEARCH
+PRIVATE
+ARCHIVED
+
+11. PROOF
+
+Show available evidence:
+
+Live product
+Demo video
+Screenshots
+Architecture
+Research/report
+Public repository
+Evaluation
+Other verifiable evidence
+
+12. TECHNOLOGY
+
+Only after the story.
+
+Example:
+
+Flutter
+Python
+ESP32
+Firebase
+Computer Vision
+
+The technology stack should not be the main story.
+
+==================================================
+22. PROJECT CARD VISUAL STYLE
+==================================================
+
+Project cards should feel like technical editorial panels.
+
+Example:
+
+01
+
+FIRESHOW
+
+AI / COMPUTER VISION / IOT
+
+INDEPENDENT BUILD
+2026
+
+AI-powered fire risk prediction and
+computer vision detection system.
+
+[REAL PROJECT IMAGE]
+
+● WORKING PROTOTYPE
+
+VIEW CASE STUDY →
+
+Use typography, lines and spacing more than decorative graphics.
+
+Some cards can use blue backgrounds.
+
+Others can be white.
+
+Use orange on hover or to indicate status/action.
+
+==================================================
+23. VISUAL PROJECT ARTIFACTS
+==================================================
+
+Do not use stock AI imagery.
+
+Use real artifacts from the actual work.
+
+FireShow:
+- hardware
+- device
+- application
+- sensor output
+- model output
+
+MathQuest:
+- PWA UI
+- gameplay
+- question screen
+- dashboard
+- OCR if available
+
+Drought:
+- map
+- prediction output
+- model comparison
+- evaluation visualisation
+
+Tax anomaly detection:
+- anomaly ranking
+- feature explanation
+- workflow diagram
+- research visualisation
+
+EDMS:
+- document
+- retrieval flow
+- output/report
+- system architecture
+
+Bellotrade/Tarapint:
+- actual interface
+- catalogue
+- admin tools
+- product workflows
+
+Every flagship project needs one visually dominant real artifact.
+
+==================================================
+24. EVIDENCE-FIRST PORTFOLIO
+==================================================
+
+Because many high-level projects are not open source, the portfolio must not rely on GitHub as the definition of credibility.
+
+Use multiple forms of proof:
+
+LIVE
+The visitor can use it.
+
+DEMO
+The visitor can watch it.
+
+CASE STUDY
+The implementation is private but the work can be explained.
+
+RESEARCH
+Technical findings and evaluation are available.
+
+PRIVATE
+The work exists but cannot be publicly disclosed in detail.
+
+Evidence may include:
+- demo video
+- screenshots
+- architecture diagrams
+- live product
+- research report
+- public repository
+- technical writeup
+- evaluation
+
+Do not apologise for private projects.
+
+Present them professionally and explain what can be shared.
+
+==================================================
+25. ABOUT PAGE
+==================================================
+
+Replace generic enterprise consultancy copy with a builder-led narrative.
+
+Headline:
+
+ABOUT POLYMATH
+
+Opening:
+
+Polymath is a builder-led engineering practice focused on turning difficult problems into working software, AI and data systems.
+
+Explain the philosophy:
+
+Technology is rarely the hardest part.
+
+The harder problems are usually:
+- defining the right problem
+- choosing what to build
+- dealing with imperfect data
+- designing around constraints
+- getting a prototype into the hands of users
+- measuring whether it actually works
+
+Polymath works across software, AI and data because real problems rarely fit into one discipline.
+
+Values:
+
+BUILD FROM THE PROBLEM
+Start with the actual problem rather than a preferred technology.
+
+PREFER SIMPLE SYSTEMS
+Use complexity only when it is justified.
+
+MEASURE WHAT MATTERS
+Use evidence rather than decoration.
+
+DESIGN FOR CONSTRAINTS
+Budget, connectivity, data quality, hardware and users are part of the brief.
+
+SHIP
+A working system teaches more than an abstract plan.
+
+MAKE SYSTEMS UNDERSTANDABLE
+Good engineering should be explainable.
+
+Do not claim certifications, awards, enterprise credentials or maturity unless verifiable.
+
+==================================================
+26. CAPABILITIES PAGE
+==================================================
+
+Use five major capabilities:
+
+1. PRODUCT ENGINEERING
+
+Web
+Mobile
+Backend
+APIs
+Internal tools
+Operational platforms
+
+2. AI ENGINEERING
+
+Machine learning
+Computer vision
+LLM applications
+Evaluation
+AI integration
+
+3. DATA & DECISION SYSTEMS
+
+Analytics
+Dashboards
+Anomaly detection
+Forecasting
+Recommendations
+Decision support
+
+4. AUTOMATION & INTEGRATION
+
+Workflow automation
+Document processing
+API integrations
+Operational tools
+System integration
+
+5. CONNECTED SYSTEMS
+
+Embedded software
+IoT
+Telemetry
+Device-to-cloud systems
+
+Each section should include:
+- problems it solves
+- what is built
+- examples
+- relevant projects
+- CTA
+
+Do not create twenty service categories.
+
+==================================================
+27. EMMANUEL PROFILE
+==================================================
+
+Route:
+
+/profiles/emmanuel
+
+Position:
+
+EMMANUEL LAWAL
+
+AI Engineer · Software Engineer · Product Builder
+
+Opening:
+
+I design and build systems across AI, software and data, from early prototypes to production-oriented implementations.
+
+Include:
+- photo
+- short biography
+- capabilities
+- selected work
+- professional experience
+- research
+- contact
+
+Clearly distinguish:
+Polymath work
+Independent work
+Academic work
+Professional engagements
+
+This is a personal professional profile connected to Polymath.
+
+Do not make it read like an agency team page.
+
+==================================================
+28. CONTACT PAGE
+==================================================
+
+Headline:
+
+HAVE A HARD PROBLEM?
+
+Supporting:
+
+Tell us what you're trying to build, fix or understand.
+
+Form fields:
+
+Name
+Email
+Project description
+Optional budget
+Optional timeline
+
+Budget should be optional.
+
+Do not force people to choose a service before they understand what they need.
+
+Primary CTA:
+
+START A PROJECT
+
+Keep the contact page simple.
+
+==================================================
+29. FOOTER
+==================================================
+
+Use:
+
+POLYMATH CORPORATION
+
+Dream. Dare. Do.
+
+Links:
+Work
+Capabilities
+About
+Brief
+Contact
+
+Also include:
+Emmanuel profile
+LinkedIn
+GitHub
+other verified social links
+
+Keep the footer clean.
+
+==================================================
+30. CONTENT STYLE
+==================================================
+
+Use plain, precise English.
+
+Short paragraphs.
+
+Strong verbs.
+
+Minimal buzzwords.
+
+Avoid unnecessary adjectives.
+
+Do not write like a marketing agency.
+
+Do not write "we leverage cutting-edge AI technologies."
+
+Write:
+
+"We built..."
+
+"We tested..."
+
+"The system..."
+
+"The model..."
+
+"The result..."
+
+Use technical terms where appropriate.
+
+Make technical information understandable to non-specialists without oversimplifying it.
+
+==================================================
+31. CREDIBILITY RULES
+==================================================
+
+The website must be rigorously truthful.
+
+Before implementing a claim, ask:
+
+Is this true?
+Is it current?
+Who actually did it?
+Was it Polymath, Emmanuel personally, an employer, a client, a university project or another organisation?
+Can the claim be evidenced?
+Does the wording accurately represent the relationship?
+
+Examples:
+
+If Emmanuel built something independently:
+"Independent Build"
+
+If Emmanuel built it as academic research:
+"Academic Research"
+
+If Emmanuel worked on it while employed:
+"Professional Work"
+
+If Polymath actually delivered it for a client:
+"Client Work"
+
+Never collapse all of these into:
+"Polymath client project"
+
+==================================================
+32. EXISTING SITE CONTENT AUDIT
+==================================================
+
+Before implementing the new content, audit the existing site.
+
+Specifically review:
+- homepage
+- /work
+- /about
+- /profiles/emmanuel
+- /contact
+- all existing project pages
+- navigation
+- footer
+- social links
+- claims
+- statistics
+- testimonials
+- certifications
+- awards
+- client logos
+- case studies
+- service descriptions
+- metadata
+
+Identify:
+KEEP
+REWRITE
+REMOVE
+VERIFY
+REPLACE
+
+Remove stale or misleading information.
+
+Do not preserve content merely because it already exists.
+
+==================================================
+33. CONTENT MIGRATION
+==================================================
+
+Prioritise actual recent work.
+
+Important projects to feature:
+
+FireShow
+MathQuest
+Tax Compliance & Revenue Assurance
+Drought Prediction
+EDMS / RAG
+Bellotrade
+Tarapint
+Uni-Shuttle
+Toloka
+Pesoka
+Trajectory Labs
+Dell / NTS
+Cattle Transport Monitoring
+AgriWise
+other verified recent work
+
+Do not force every project onto the homepage.
+
+Use the hierarchy:
+
+FEATURED WORK
+SUPPORTING WORK
+RESEARCH
+PROFESSIONAL ENGAGEMENTS
+ARCHIVE
+
+==================================================
+34. WORK HIERARCHY
+==================================================
+
+The portfolio should clearly show different levels.
+
+LEVEL 1:
+Flagship projects
+
+6 or fewer.
+
+LEVEL 2:
+Supporting projects
+
+Compact cards.
+
+LEVEL 3:
+Professional engagements
+
+Shorter descriptions.
+
+LEVEL 4:
+Archive
+
+Older/less important work.
+
+Do not give every project equal visual weight.
+
+==================================================
+35. SEO AND TECHNICAL QUALITY
+==================================================
+
+Each important page should have:
+
+- unique title
+- meta description
+- Open Graph image
+- social sharing image
+- canonical URL
+- structured metadata
+- descriptive alt text
+
+Technical requirements:
+
+- responsive
+- mobile-first
+- fast
+- accessible
+- keyboard navigation
+- visible focus states
+- good contrast
+- reduced-motion support
+- semantic HTML
+- optimised images
+- no layout shift
+- no unnecessary JavaScript
+- clean URLs
+
+The site should load quickly.
+
+Do not add giant animation libraries unless necessary.
+
+==================================================
+36. RESPONSIVE DESIGN
+==================================================
+
+Do not make desktop design and simply shrink it.
+
+Design intentionally for:
+- large desktop
+- laptop
+- tablet
+- mobile
+
+The typography should scale intelligently.
+
+The 12-column grid should collapse gracefully.
+
+Project images should remain compelling on mobile.
+
+Navigation should remain simple.
+
+The primary CTA must always remain easy to access.
+
+==================================================
+37. ACCESSIBILITY
+==================================================
+
+Ensure:
+- sufficient text contrast
+- semantic headings
+- keyboard navigation
+- clear focus states
+- accessible buttons
+- descriptive links
+- alt text
+- reduced-motion support
+- no colour-only communication
+- readable body sizes
+
+Orange and blue must still have adequate contrast depending on usage.
+
+==================================================
+38. BRAND-LEVEL VISUAL MOTIFS
+==================================================
+
+Develop a reusable design system around:
+
+thin lines
+grids
+numbers
+technical labels
+radial geometry
+blue fields
+orange indicators
+strong typography
+project indexing
+status indicators
+data visualisation
+
+Example:
+
+01 / WORK
+02 / SYSTEM
+03 / RESULT
+
+Use these consistently.
+
+Do not make every page look identical.
+
+Create a recognizable grammar instead.
+
+==================================================
+39. DESIGN SYSTEM COMPONENTS
+==================================================
+
+Build reusable components for:
+
+Navbar
+Footer
+Hero
+SectionHeading
+ProjectCard
+FeaturedProject
+ProjectMetadata
+StatusBadge
+TechnicalLabel
+CTA
+ArchitectureDiagram
+Metric
+Timeline
+ProcessStep
+ImageGallery
+Quote/Callout
+FilterBar
+CaseStudySection
+ArticleCard
+ContactForm
+
+Components should support the brand system.
+
+Do not hard-code inconsistent page-specific styling.
+
+==================================================
+40. CONTENT MODEL
+==================================================
+
+Projects should have structured data fields.
+
+At minimum:
+
+slug
+title
+description
+year
+context
+role
+status
+categories
+heroImage
+gallery
+liveUrl
+demoUrl
+repositoryUrl
+problem
+context
+solution
+architecture
+implementation
+hardParts
+results
+technologies
+evidence
+featured
+published
+
+This should make future project additions straightforward.
+
+A new project should be able to be added without building a completely new page structure.
+
+==================================================
+41. FINAL AESTHETIC TARGET
+==================================================
+
+The finished Polymath website should feel:
+
+Geometric
+Technical
+Editorial
+Experimental
+Precise
+Modern
+Confident
+Human
+
+The primary visual relationship:
+
+COBALT BLUE + WHITE
+
+Secondary:
+
+BLACK
+
+Signal:
+
+ORANGE
+
+The visual references should evoke technical research, product engineering and intelligent systems.
+
+The site should not look generic.
+
+It should not look like a template.
+
+It should not look like an "AI agency."
+
+It should look like a distinctive engineering studio.
+
+==================================================
+42. FINAL USER PERCEPTION
+==================================================
+
+Within 30 seconds of visiting the website, a visitor should understand:
+
+1. What Polymath is.
+2. What Polymath builds.
+3. What Emmanuel builds.
+4. What has actually been built.
+5. Which projects are independent, research, academic or professional.
+6. Why the work is technically interesting.
+7. How to contact the team.
+
+The intended conclusion should be:
+
+"This is a small, technically capable builder who can take difficult problems and turn them into real systems."
+
+Not:
+
+"This is a generic agency claiming to do everything."
+
+==================================================
+43. IMPLEMENTATION PROCESS
+==================================================
+
+Follow this sequence:
+
+PHASE 1
+Audit the entire existing site and codebase.
+
+PHASE 2
+Create the new content/information architecture.
+
+PHASE 3
+Create the design system:
+- colors
+- typography
+- spacing
+- grid
+- borders
+- buttons
+- metadata
+- cards
+- status indicators
+- animation rules
+
+PHASE 4
+Rebuild the homepage.
+
+PHASE 5
+Rebuild the work index.
+
+PHASE 6
+Create the flagship case-study system.
+
+PHASE 7
+Rebuild About.
+
+PHASE 8
+Rebuild Capabilities.
+
+PHASE 9
+Rebuild Emmanuel profile.
+
+PHASE 10
+Rebuild Contact.
+
+PHASE 11
+Add Brief architecture if content exists.
+
+PHASE 12
+Audit every factual claim and remove unverified information.
+
+PHASE 13
+Test responsive layouts.
+
+PHASE 14
+Test accessibility.
+
+PHASE 15
+Test performance.
+
+PHASE 16
+Test SEO and metadata.
+
+PHASE 17
+Polish animation, spacing and visual consistency.
+
+Do not begin by adding decorative animations.
+
+First get:
+content
+hierarchy
+layout
+typography
+colour
+evidence
+
+correct.
+
+Then add motion.
+
+==================================================
+44. FINAL PRINCIPLE
+==================================================
+
+The website itself should demonstrate the same qualities Polymath claims to value.
+
+It should be:
+
+Simple where simple is enough.
+Technical where technical detail matters.
+Clear.
+Fast.
+Measured.
+Purposeful.
+Adaptable.
+Well engineered.
+
+The website is not just a marketing surface.
+
+It is itself a Polymath product.
+
+Build the redesign so that the visitor can feel the engineering quality without needing it explained to them.

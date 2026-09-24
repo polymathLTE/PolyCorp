@@ -6,7 +6,7 @@ export const runtime = "edge"; // works with fetch and minimal deps
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, message, budget, honeypot } = body;
+    const { name, email, message, budget, timeline, honeypot } = body;
 
     if (honeypot) {
       return NextResponse.json({ error: "Spam detected" }, { status: 400 });
@@ -35,6 +35,7 @@ export async function POST(request: Request) {
       <p><strong>Name:</strong> ${escapeHtml(name)}</p>
       <p><strong>Email:</strong> ${escapeHtml(email)}</p>
       <p><strong>Budget:</strong> ${escapeHtml(budget || "Not specified")}</p>
+      <p><strong>Timeline:</strong> ${escapeHtml(timeline || "Not specified")}</p>
       <p><strong>Message:</strong></p>
       <p>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>
       <hr/>

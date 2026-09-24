@@ -1,67 +1,48 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Lora, Space_Mono } from "next/font/google"
-import { Poppins } from "next/font/google"
+import { Sora, IBM_Plex_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Suspense } from "react"
+import { SiteHeader } from "@/components/layout/site-header"
+import { SiteFooter } from "@/components/layout/site-footer"
 import "./globals.css"
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-})
-
-const poppins = Poppins({
+const sora = Sora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-poppins",
+  variable: "--font-sora",
 })
 
-const lora = Lora({
+const plexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
   display: "swap",
-  variable: "--font-lora",
+  variable: "--font-plex-mono",
 })
 
-const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-  variable: "--font-space-mono",
-})
+const siteUrl = "https://www.polymathcorp.works"
 
 export const metadata: Metadata = {
   title: {
-    default: "Polymath Corporation - Integrated IT Advisory & Implementation",
+    default: "Polymath Corporation — We turn difficult ideas into working systems",
     template: "%s | Polymath Corporation",
   },
   description:
-    "Portfolio of Polymath Corporation, integrated IT Consulting and Implementation specializing in Software solutions, ML & LLM fine-tuning, resilient data pipelines and BI analytics, and hybrid infrastructure for finance, utilities, telecoms and enterprise organizations",
-  generator: "Next.js",
-  applicationName: "Polymath Corporation Portfolio",
+    "Polymath is a builder-led engineering studio. AI, software and data systems built for real problems, from first problem definition to working implementation.",
+  applicationName: "Polymath Corporation",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "Data Science",
-    "AI Engineering",
-    "Machine Learning",
-    "Python",
-    "SQL",
-    "Power BI",
-    "LLM Fine-tuning",
-    "Data Pipelines",
-    "AWS",
-    "GCP",
+    "AI engineering",
+    "software engineering",
+    "data systems",
+    "product engineering",
+    "automation",
+    "connected systems",
     "Lagos",
     "Nigeria",
-    "Gbogbonise",
-
-
   ],
-  authors: [{ name: "Polymath Corporation", url: "https://polymathcorp.works" }],
+  authors: [{ name: "Polymath Corporation", url: siteUrl }],
   creator: "Polymath Corporation",
   publisher: "Polymath Corporation",
   formatDetection: {
@@ -69,34 +50,33 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://polymathcorp.works"),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://polymathcorp.works",
-    title: "Polymath Corporation - Integrated IT Advisory & Implementation",
+    url: siteUrl,
+    siteName: "Polymath Corporation",
+    title: "Polymath Corporation — We turn difficult ideas into working systems",
     description:
-      "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in LLM fine-tuning and scalable data solutions.",
-    siteName: "Polymath Corporation Portfolio",
+      "AI, software and data systems built for real problems, from first problem definition to working implementation.",
     images: [
       {
         url: "/polymath_corp_logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Polymath Corporation - Integrated IT Advisory & Implementation",
+        width: 880,
+        height: 883,
+        alt: "Polymath Corporation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Polymath Corporation - Integrated IT Advisory & Implementation",
+    title: "Polymath Corporation — We turn difficult ideas into working systems",
     description:
-      "Portfolio showcasing ML projects, data pipelines, and AI engineering expertise. Specializing in Compliance and scalable data solutions.",
+      "AI, software and data systems built for real problems, from first problem definition to working implementation.",
     images: ["/polymath_corp_logo.png"],
-    creator: "@PolymathCorpo",
   },
   robots: {
     index: true,
@@ -117,71 +97,64 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 }
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Polymath Corporation",
+  alternateName: "Polymath",
+  url: siteUrl,
+  logo: `${siteUrl}/polymath_corp_logo.png`,
+  description:
+    "Builder-led engineering studio turning difficult ideas into working AI, software and data systems.",
+  email: "hello@polymathcorp.works",
+  telephone: "+2347065533470",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Lekki",
+    addressRegion: "Lagos",
+    addressCountry: "NG",
+  },
+  sameAs: [
+    "https://www.linkedin.com/company/polymath-corporation/",
+    "https://github.com/PolymathCorp",
+  ],
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Software Engineering",
+    "Data Engineering",
+    "Product Engineering",
+    "Automation",
+    "Embedded Systems",
+    "Computer Vision",
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} ${lora.variable} ${spaceMono.variable} dark`}>
+    <html lang="en" className={`${sora.variable} ${plexMono.variable}`}>
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Polymath Corporation",
-              jobTitle: "Integrated IT Advisory & Implementation",
-              description:
-                "Integrated IT Advisory & Implementation specializing in Compliance, machine learning, LLM fine-tuning, and data pipelines",
-              url: "https://polymathcorp.works",
-              email: "hello@polymathcorp.works",
-              telephone: "+2347065533470",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Lekki",
-                addressRegion: "Lagos",
-                addressCountry: "Nigeria",
-              },
-              sameAs: ["https://www.linkedin.com/company/polymath-corporation/", "https://github.com/PolymathCorp"],
-              knowsAbout: [
-                "Data Science",
-                "Machine Learning",
-                "Artificial Intelligence",
-                "Python Programming",
-                "SQL",
-                "Power BI",
-                "AWS",
-                "Google Cloud Platform",
-                "Data Infrastructure",
-                "LLM Fine-tuning",
-                "Compliance",
-              ],
-              alumniOf: {
-                "@type": "Organization",
-                name: "FUT, Akure",
-              },
-              worksFor: {
-                "@type": "Organization",
-                name: "Polymath Corporation",
-              },
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased min-h-screen flex flex-col">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded-md z-50 focus:outline-none focus:ring-2 focus:ring-ring"
         >
           Skip to main content
         </a>
-        <div id="main-content">
-          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-        </div>
+        <SiteHeader />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <SiteFooter />
         <Analytics />
         <SpeedInsights />
       </body>
