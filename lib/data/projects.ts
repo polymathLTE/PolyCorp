@@ -119,12 +119,12 @@ export const projects: Project[] = [
         caption: "Sensor node: ESP32, dual MQ-7 CO sensors, RHT sensor, buzzer and power regulation.",
       },
       {
-        src: "/project_screenshots/fireshow/fireshow_home_mockup.png",
+        src: "/project_screenshots/fireshow/fireshow_home_mockup.jpg",
         alt: "FireShow login screen on a mobile phone mockup",
         caption: "Mobile application sign-in.",
       },
       {
-        src: "/project_screenshots/fireshow/readings_mockup.png",
+        src: "/project_screenshots/fireshow/readings_mockup.jpg",
         alt: "FireShow app displaying sensor trend charts for temperature, humidity, CO level and hydrocarbon readings",
         caption: "Live sensor trends with coloured sparklines.",
       },
