@@ -109,27 +109,27 @@ export const projects: Project[] = [
       "FireShow mobile app overview screen showing ML fusion risk score, zones, live temperature, humidity, CO and smoke readings",
     gallery: [
       {
-        src: "/project_screenshots/fireshow/Screenshot 2026-05-09 024153.png",
+        src: "/project_screenshots/fireshow/vision_fallback.png",
         alt: "FireShow computer vision flame detection on a live camera frame with bounding boxes and confidence scores on an ESP32-CAM feed",
         caption: "Vision fallback detection on an ESP32-CAM frame (score 0.99).",
       },
       {
-        src: "/project_screenshots/fireshow/Screenshot 2026-07-30 123518.png",
+        src: "/project_screenshots/fireshow/circuit_plan.png",
         alt: "FireShow hardware schematic showing ESP32 DevKit wired to MQ-7 carbon monoxide sensors, temperature and humidity sensor, buzzer, voltage regulator and battery pack",
         caption: "Sensor node: ESP32, dual MQ-7 CO sensors, RHT sensor, buzzer and power regulation.",
       },
       {
-        src: "/project_screenshots/fireshow/Device Mockup.png",
+        src: "/project_screenshots/fireshow/fireshow_home_mockup.png",
         alt: "FireShow login screen on a mobile phone mockup",
         caption: "Mobile application sign-in.",
       },
       {
-        src: "/project_screenshots/fireshow/fireshow_home_mockup.jpg",
+        src: "/project_screenshots/fireshow/readings_mockup.png",
         alt: "FireShow app displaying sensor trend charts for temperature, humidity, CO level and hydrocarbon readings",
         caption: "Live sensor trends with coloured sparklines.",
       },
       {
-        src: "/project_screenshots/fireshow/readings_mockup.jpg",
+        src: "/project_screenshots/fireshow/logo_snap.png",
         alt: "FireShow brand splash screen with flame logo on a dark green background",
         caption: "Product identity.",
       },
