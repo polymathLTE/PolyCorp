@@ -8,7 +8,7 @@ import { StatusBadge } from "@/components/work/status-badge"
 export const metadata: Metadata = {
   title: "Capabilities",
   description:
-    "Product engineering, AI engineering, data & decision systems, automation and connected systems — five practice areas from problem definition to working implementation.",
+    "Product engineering, AI engineering, data & decision systems, automation, connected systems and blockchain — six practice areas from problem definition to working implementation.",
   alternates: { canonical: "/capabilities" },
 }
 
@@ -18,7 +18,7 @@ export default function CapabilitiesPage() {
       <PageHero
         eyebrow="Capabilities"
         title="What we build."
-        description="Five practice areas. Each starts from a real problem and ends in a system people can use."
+        description="Six practice areas. Each starts from a real problem and ends in a system people can use."
       />
 
       <div className="container-site py-12 md:py-16 flex flex-col gap-14">

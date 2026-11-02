@@ -83,10 +83,12 @@ export default async function CaseStudyPage({ params }: Props) {
             <div className="lg:col-span-5">
               <div className="panel p-5 md:p-6">
                 <dl className="grid grid-cols-2 gap-4">
-                  <div>
-                    <dt className="mono-label text-ink-muted mb-1">Year</dt>
-                    <dd className="text-sm font-medium">{project.year}</dd>
-                  </div>
+                  {project.year ? (
+                    <div>
+                      <dt className="mono-label text-ink-muted mb-1">Year</dt>
+                      <dd className="text-sm font-medium">{project.year}</dd>
+                    </div>
+                  ) : null}
                   <div>
                     <dt className="mono-label text-ink-muted mb-1">Status</dt>
                     <dd>

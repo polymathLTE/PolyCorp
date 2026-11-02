@@ -1,4 +1,10 @@
-export type CapabilityCategory = "ai" | "products" | "data" | "systems" | "research"
+export type CapabilityCategory =
+  | "ai"
+  | "products"
+  | "data"
+  | "systems"
+  | "research"
+  | "blockchain"
 
 export type ProjectTier = "flagship" | "compact" | "experience"
 
@@ -58,7 +64,8 @@ export interface Project {
   title: string
   tagline: string
   description: string
-  year: string
+  // Optional — omitted when the work should not be pinned to a date
+  year?: string
   tier: ProjectTier
   categories: CapabilityCategory[]
   tags: string[]
@@ -739,6 +746,117 @@ export const projects: Project[] = [
     ],
     draft: false,
   },
+
+  {
+    slug: "meridian-protocol",
+    title: "Meridian Protocol",
+    tagline: "Cross-chain, reputation-based lending protocol.",
+    description:
+      "A lending protocol where on-chain reputation earns better loan terms — identity and reputation on Ethereum, execution on Solana, connected through LayerZero.",
+    tier: "flagship",
+    categories: ["blockchain", "systems"],
+    tags: ["Blockchain", "DeFi", "Cross-Chain", "Smart Contracts", "Lending"],
+    status: "Working prototype",
+    contextNote:
+      "Protocol development as principal developer. Interface screenshots are from the protocol's own site; contracts and deployments are not published here.",
+    role: "Principal developer — protocol architecture, reputation model, cross-chain integration and application layer.",
+    heroImage: "/project_screenshots/meridian/meridian_1.png",
+    heroAlt:
+      "Meridian Protocol landing page showing trust-based lending, cross-chain deposits and dynamic LTV feature cards",
+    gallery: [
+      {
+        src: "/project_screenshots/meridian/meridian_2.png",
+        alt: "Meridian Protocol landing page statement describing reputation-based lending across blockchains through immutable smart contracts",
+        caption: "Protocol positioning: reputation-based lending across chains.",
+      },
+    ],
+    featured: true,
+    featuredOrder: 4,
+    order: 7,
+    problem: [
+      "Lending protocols price risk with collateral and almost nothing else. A borrower with years of clean on-chain history gets the same terms as a wallet created yesterday — and any reputation that does exist is trapped on the chain it was built on.",
+      "Cross-chain makes it worse. Moving value between Ethereum and Solana means bridging, wrapping and state split across two networks, so a protocol lending on both has to reason about identity on one chain and execution on another.",
+      "The consequence is that creditworthiness does not travel. Every new chain a protocol touches resets a borrower to zero, and the protocol re-learns the same expensive lesson about the same user.",
+    ],
+    context: [
+      "Built to answer one specific question: can on-chain history be turned into borrowing terms meaningfully better than a flat, collateral-only rate — and can that reputation follow the borrower across chains?",
+      "Screenshots on this page are from the protocol's own interface. Contract addresses, deployments and live figures are not disclosed.",
+    ],
+    roleDetail: [
+      "Architected the protocol end to end: identity and reputation on Ethereum, lending execution on Solana, and the messaging layer that carries state between them.",
+      "Designed the reputation model that maps on-chain behaviour to loan terms — a trust score that determines both eligible amount and loan-to-value ratio.",
+      "Implemented the cross-chain message flow through LayerZero so a position opened against Ethereum history can be acted on on Solana without a custodial step.",
+      "Built the application layer: the protocol site, deposit and position flows, and the terms surface shown in the screenshots.",
+    ],
+    solution: [
+      "Identity and reputation live on Ethereum, where history is longest and most expensive to fabricate. A borrower carries a trust score derived from on-chain behaviour instead of an off-chain credit file.",
+      "Lending executes on Solana for cost and throughput, with LayerZero carrying position and reputation state across the two chains.",
+      "Reputation is priced rather than displayed. Higher trust scores unlock better loan terms and higher eligible amounts, with dynamic loan-to-value ratios — the interface states up to a 7.5% LTV bonus above standard rates for the strongest scores.",
+    ],
+    architecture: {
+      title: "Meridian Protocol flow",
+      nodes: [
+        { id: "identity", label: "Identity", detail: "Ethereum · reputation state" },
+        { id: "reputation", label: "Reputation engine", detail: "Trust score · term mapping" },
+        { id: "layerzero", label: "LayerZero", detail: "Cross-chain messaging" },
+        { id: "solana", label: "Lending execution", detail: "Solana · collateral · positions" },
+        { id: "app", label: "Application", detail: "Deposits · borrowing · terms" },
+      ],
+    },
+    architectureCaption:
+      "Reputation is derived against Ethereum history; LayerZero carries state to Solana where positions execute; the application exposes both as terms a borrower can read.",
+    implementation: [
+      "Reputation is anchored on Ethereum so the history that determines terms sits on the chain with the deepest settlement record, while the borrowing itself runs on Solana where cost and latency matter to the borrower.",
+      "LayerZero is used as the messaging layer, carrying position and reputation updates between chains rather than routing funds through a single custodial bridge.",
+      "The trust score maps on-chain behaviour onto loan parameters — eligible amount and LTV — rather than producing an opaque number. The interface surfaces it as concrete terms.",
+      "The frontend is the protocol's public surface: deposits from Ethereum to Solana, position state, and the terms a given trust score unlocks.",
+    ],
+    hardParts: [
+      {
+        title: "Reputation that has to survive a chain boundary",
+        body: "A score computed on Ethereum is only useful if Solana can act on it. Making that handoff explicit — what is authoritative, what is derived, what is true while a message is still in flight — was the central design problem.",
+      },
+      {
+        title: "Pricing trust when history can be manufactured",
+        body: "On-chain history is observable but gameable: a wallet can be built to look trustworthy cheaply. The model had to weight behaviour that is expensive to fake and stay conservative where the signal is thin.",
+      },
+      {
+        title: "Two chains, one position",
+        body: "Deposits start on Ethereum and positions live on Solana. Keeping a single coherent position across two execution environments with asynchronous messaging between them is where most of the correctness work sits.",
+      },
+      {
+        title: "Making terms legible",
+        body: "Better rates only matter if the borrower can see why they qualified. Surfacing the trust score as readable terms — eligible amount, LTV, bonus — was treated as a product requirement, not a dashboard detail.",
+      },
+    ],
+    results: {
+      text:
+        "A working prototype: reputation derived from on-chain behaviour, cross-chain messaging between Ethereum and Solana through LayerZero, and loan terms that improve with trust score. The interface states up to a 7.5% LTV bonus above standard rates for the strongest scores — a stated protocol maximum, not a measured portfolio outcome. This is a prototype under development: no audit, no live deposits and no production figures are claimed.",
+      metrics: [
+        {
+          value: "7.5%",
+          label: "Max LTV bonus above standard",
+          note: "Stated in the protocol interface",
+        },
+        { value: "2", label: "Chains", note: "Ethereum identity · Solana execution" },
+        { value: "LayerZero", label: "Cross-chain messaging", note: "State between chains" },
+      ],
+    },
+    proof: [
+      { type: "Demo", label: "Protocol interface screenshots" },
+      { type: "Case study", label: "Architecture and term model" },
+      { type: "Private", label: "Contracts and deployments held internally" },
+    ],
+    technologies: [
+      "Ethereum",
+      "Solana",
+      "LayerZero",
+      "Smart contracts",
+      "Cross-chain messaging",
+      "DeFi lending",
+    ],
+    draft: true,
+  },
 ]
 
 export const compactProjects: Project[] = [
@@ -819,6 +937,40 @@ export const compactProjects: Project[] = [
     order: 11,
     draft: true,
   },
+  {
+    slug: "dialectica-crypto-payroll",
+    title: "Dialectica",
+    tagline: "Technical advisory on a crypto-payroll system.",
+    description:
+      "An advisory engagement on the design of a crypto-payroll system — how payroll obligations, wallet flows and payment rails should fit together.",
+    tier: "compact",
+    categories: ["blockchain", "systems"],
+    tags: ["Consulting", "Payments", "Crypto Payroll"],
+    status: "Private",
+    contextNote: "Consulting engagement. Client and implementation details withheld.",
+    role: "Technical consultant on the crypto-payroll system design.",
+    order: 12,
+    draft: true,
+  },
+  {
+    slug: "price-monitoring",
+    title: "Exchange Price Monitoring",
+    tagline: "Price monitoring and comparison across centralized exchanges and DEXes.",
+    description:
+      "An internal tool that monitors and compares prices across centralized exchanges and decentralized exchanges from a single interface.",
+    tier: "compact",
+    categories: ["blockchain", "data"],
+    tags: ["Market Data", "CEX / DEX", "Internal Tool", "Price Comparison"],
+    status: "Working prototype",
+    contextNote:
+      "Internal tool built for a trading firm. Parties and trading data withheld.",
+    role: "Principal developer — exchange integrations, data pipeline and interface.",
+    heroImage: "/project_screenshots/pricing/pricing_1.png",
+    heroAlt:
+      "Exchange configuration panel with read-only API key fields for Binance, Bybit and OKX",
+    order: 13,
+    draft: true,
+  },
 ]
 
 export const allProjects = [...projects, ...compactProjects]
@@ -850,4 +1002,5 @@ export const workCategories: { id: CapabilityCategory | "all"; label: string }[]
   { id: "data", label: "Data" },
   { id: "systems", label: "Systems" },
   { id: "research", label: "Research" },
+  { id: "blockchain", label: "Blockchain" },
 ]

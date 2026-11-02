@@ -61,7 +61,9 @@ export function ProjectCard({ project, index, href }: ProjectCardProps) {
             </div>
             <div className="flex items-center justify-between gap-3 hairline-t pt-3">
               <StatusBadge status={project.status} />
-              <span className="mono-meta text-ink-muted">{project.year}</span>
+              {project.year ? (
+                <span className="mono-meta text-ink-muted">{project.year}</span>
+              ) : null}
             </div>
             <span className="link-arrow">
               View case study <span aria-hidden="true">→</span>

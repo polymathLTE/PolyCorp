@@ -79,7 +79,9 @@ export function FeaturedProject({ project, index }: FeaturedProjectProps) {
           <div className="flex flex-col gap-4 hairline-t pt-5">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <StatusBadge status={project.status} />
-              <span className="mono-meta text-ink-muted">{project.year}</span>
+              {project.year ? (
+                <span className="mono-meta text-ink-muted">{project.year}</span>
+              ) : null}
             </div>
             <div className="flex flex-wrap items-center gap-4">
               <Link href={`/work/${project.slug}`} className="link-arrow">

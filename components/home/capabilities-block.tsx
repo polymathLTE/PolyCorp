@@ -11,7 +11,7 @@ export function CapabilitiesBlock() {
             index="02"
             eyebrow="Capabilities"
             title={<span id="what-we-build">What we build.</span>}
-            description="Five practice areas. Real problems, working implementations — not service catalogue filler."
+            description="Six practice areas. Real problems, working implementations — not service catalogue filler."
             tone="on-brand"
           />
           <Link

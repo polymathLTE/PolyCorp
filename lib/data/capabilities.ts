@@ -1,7 +1,13 @@
 import type { Project } from "./projects"
 import { getProject } from "./projects"
 
-export type CapabilityId = "products" | "ai" | "data" | "automation" | "connected"
+export type CapabilityId =
+  | "products"
+  | "ai"
+  | "data"
+  | "automation"
+  | "connected"
+  | "blockchain"
 
 export interface Capability {
   id: CapabilityId
@@ -134,6 +140,30 @@ export const capabilities: Capability[] = [
       "Zone-aware multi-device monitoring",
     ],
     projectSlugs: ["fire-show", "cattle-transport"],
+  },
+  {
+    id: "blockchain",
+    index: "06",
+    title: "Blockchain & Web3",
+    summary:
+      "Cross-chain protocols, on-chain lending logic and crypto-native internal tooling — built and explained with the same evidence discipline as the rest of the work.",
+    problems: [
+      "Reputation and identity that stop at the chain they were built on",
+      "Cross-chain flows routed through custodial bridges that hold user funds",
+      "Market data scattered across exchanges with no single comparison surface",
+    ],
+    builds: [
+      "Cross-chain protocols and messaging integrations",
+      "On-chain lending and reputation models",
+      "Wallet, payment and payroll flows",
+      "CEX / DEX market-data tooling",
+    ],
+    examples: [
+      "Reputation-based lending from Ethereum to Solana via LayerZero",
+      "Crypto-payroll system design advisory",
+      "Exchange price monitoring across CEXes and DEXes",
+    ],
+    projectSlugs: ["meridian-protocol", "dialectica-crypto-payroll", "price-monitoring"],
   },
 ]
 
