@@ -111,9 +111,8 @@ export const projects: Project[] = [
     contextNote:
       "Developed internally as an experimental connected-safety system.",
     role: "Designed and built the full system — hardware, firmware, ML, backend and mobile app.",
-    heroImage: "/project_screenshots/fireshow/Device Mockup (1).png",
-    heroAlt:
-      "FireShow mobile app overview screen showing ML fusion risk score, zones, live temperature, humidity, CO and smoke readings",
+    heroImage: "/project_screenshots/fireshow/fireshow_home_mockup.jpg",
+    heroAlt: "FireShow sign-in screen on a phone mockup against a dark background",
     gallery: [
       {
         src: "/project_screenshots/fireshow/vision_fallback.png",
@@ -124,11 +123,6 @@ export const projects: Project[] = [
         src: "/project_screenshots/fireshow/circuit_plan.png",
         alt: "FireShow hardware schematic showing ESP32 DevKit wired to MQ-7 carbon monoxide sensors, temperature and humidity sensor, buzzer, voltage regulator and battery pack",
         caption: "Sensor node: ESP32, dual MQ-7 CO sensors, RHT sensor, buzzer and power regulation.",
-      },
-      {
-        src: "/project_screenshots/fireshow/fireshow_home_mockup.jpg",
-        alt: "FireShow login screen on a mobile phone mockup",
-        caption: "Mobile application sign-in.",
       },
       {
         src: "/project_screenshots/fireshow/readings_mockup.jpg",
